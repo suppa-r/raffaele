@@ -45,7 +45,9 @@
     }
 }
 
-
+.logo{
+    margin-bottom: 50px;
+}
 /* ------------------- */
 /* Reset               */
 /* ------------------- */
@@ -82,9 +84,9 @@ p {
     font-weight: 400;
 }
 
-/* set up the body */
+/* set up the body 
 body {
-   /* position:fixed;*/
+   position:fixed;
     background-image: url(SL.123119.26540.04.jpg);
     font-family: var(--ff-sans-normal);
     font-size: var(--fs-400);
@@ -94,16 +96,60 @@ body {
     min-height: 100vh;
     
     display: grid;
-    grid-template-rows: 25px 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 25px 1fr ;
+    grid-template-columns: 1fr 1fr 1fr ;
   overflow-x: hidden;
   overflow-y: hidden;
+}*/
+
+
+.logo{
+    margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
 }
 
+.index{
+background-image: url(SL.123119.26540.04.jpg);
+    line-height: 1.5;
+    display: grid;
+    grid-template-rows: 200px auto auto;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+  /*overflow-x: hidden;
+  overflow-y: hidden;*/
+  grid-template-areas: 
+  'h h'
+  'h1 image'
+  'h2 image';
 
-/* make images easier to work with */
+}
+
+.h{
+    grid-area: h;
+}
+
+.h1{
+    grid-area: h1;
+    font-size: var(--fs-500);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-left: 200px;
+}
+
+.h2{
+    grid-area: 
+    h2;
+    font-size: var(--fs-900);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-left: 200px;
+}
+
+.a{
+    grid-area:
+    image;
+}
+
+/*make images easier to work with */
 img,
-picutre {
+picture {
     max-width: 100%;
     display: block;
 }
@@ -229,23 +275,7 @@ select {
 .fs-600 {
     line-height: 1.1;
 }
-h1{
-    margin-top: 100px;
-    margin-left: 130px;
-    grid-row: 4 / -1;
-    grid-column: 3;
-    align-self: start;
-   
-}
 
-p{
-    margin-top: 10px;
-    margin-left: 30px;
-    grid-row: 3;
-    grid-column:2/4;
-    align-self: start;
-
-}
 .numbered-title {
     font-family: var(--ff-sans-cond);
     font-size: var(--fs-500);
@@ -290,8 +320,8 @@ p{
     content: '';
     position: absolute;
     z-index: -1;
-    width: 50%;
-    height: 50%;
+    width: 80%;
+    height: 80%;
     background: hsl( var(--clr-white) / .3);
     border-radius: 50%;
     opacity: 0;
@@ -306,11 +336,7 @@ p{
 
 /* primary-header */
 
-.logo {
-   /* clamp(1.5rem, 5vw, 3.5rem);*/
-   margin: 5.5rem ;
-   margin-top: 5rem ;
-}
+
 
 .primary-header {
     
@@ -326,7 +352,7 @@ p{
     list-style: none;
     padding: 0;
     margin: 0;
-    background: hsl( var(--clr-light) / 0.05);
+    background: hsl( var(--clr-white) / 0.05);
     backdrop-filter: blur(1.5rem);
 }
 
@@ -438,13 +464,13 @@ p{
 
 .underline-indicators > *:hover,
 .underline-indicators > *:focus {
-    border-color: hsl( var(--clr-dark) / .5);
+    border-color: hsl( var(--clr-white) / .5);
 }
 
 .underline-indicators > .active,
 .underline-indicators > [aria-selected="true"] {
     color: hsl( var(--clr-dark) / 1);
-    border-color: hsl( var(--clr-dark) / 1); 
+    border-color: hsl( var(--clr-white) / 1); 
 }
 
 .tab-list {
@@ -536,11 +562,8 @@ body {
 /* Layout                        */
 /* ----------------------------- */
 
-.div a{ grid-column:4;
-    grid-row:3;
 
-}
-.grid-container {
+/*.grid-container {
     text-align: center;
     display: grid;
     place-items: center;
@@ -592,6 +615,38 @@ body {
     font-size: 1.75rem;
 }
 
+/* genesis layout */
+
+.genesis {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px auto;
+    background-color: black;
+    
+    grid-template-areas: 
+        'h h h'
+        's content image '
+       ;
+}
+.w3-sidebar{
+    grid-area: s;
+}
+
+.genesis > picture {
+  
+    grid-area: image;
+    max-width: 60%;
+    border-bottom: 1px solid hsl( var(--clr-white) / .1);
+}
+
+.genesis-info {
+    grid-area: content;
+}
+
+.header{
+    grid-area: h;
+}
+
+
 /* crew layout */
 
 .grid-container--crew {
@@ -620,6 +675,16 @@ body {
 .crew-details h2 {
     color: hsl( var(--clr-white) / .5);
 }
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 35em) {
     .numbered-title {
