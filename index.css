@@ -103,7 +103,7 @@ body {
 
 /* make images easier to work with */
 img,
-picutre {
+picture {
     max-width: 100%;
     display: block;
 }
@@ -290,8 +290,8 @@ p{
     content: '';
     position: absolute;
     z-index: -1;
-    width: 50%;
-    height: 50%;
+    width: 80%;
+    height: 80%;
     background: hsl( var(--clr-white) / .3);
     border-radius: 50%;
     opacity: 0;
@@ -307,9 +307,9 @@ p{
 /* primary-header */
 
 .logo {
-   /* clamp(1.5rem, 5vw, 3.5rem);*/
-   margin: 5.5rem ;
-   margin-top: 5rem ;
+  
+   margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
+
 }
 
 .primary-header {
@@ -432,23 +432,19 @@ p{
     cursor: pointer;
     padding: var(--underline-gap, 0rem 0);
     border: 0;
-    border-bottom: .2rem solid hsl( var(--clr-white) / 0 );
+    border-bottom: .2rem solid hsl( var(--clr-dark) / 0 );
     background-color: transparent;
 }
 
 .underline-indicators > *:hover,
 .underline-indicators > *:focus {
-    border-color: hsl( var(--clr-dark) / .5);
+    border-color: hsl( var(--clr-white) / .5);
 }
 
 .underline-indicators > .active,
 .underline-indicators > [aria-selected="true"] {
     color: hsl( var(--clr-dark) / 1);
-    border-color: hsl( var(--clr-dark) / 1); 
-}
-
-.tab-list {
-    --gap: 2rem;
+    border-color: hsl( var(--clr-white) / 1); 
 }
 
 .dot-indicators > * {
@@ -571,10 +567,6 @@ body {
     grid-area: image;
     max-width: 60%;
     align-self: start;
-}
-
-.grid-container--destination > .tab-list {
-    grid-area: tabs;
 }
 
 .grid-container--destination > .destination-info {
