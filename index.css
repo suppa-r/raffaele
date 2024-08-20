@@ -266,24 +266,21 @@ p{
 
 
 .large-button{
-    margin-top: 300px;
+   /* margin-top: 300px;
     margin-left:45%;
     justify-self: center;
    grid-column: 6;
-   grid-row: 4;
- background-color: hsl( var(--clr-dark) / .8);
-  position:absolute;
-    display:inline-grid;
-
-    font-size: 1.1rem;
-
-    z-index: 1;
-
-    place-items: center;
-    padding: 0 1em;
-    border-radius: 50%;
-    aspect-ratio: 1;
-    text-decoration: none;
+   grid-row: 4;*/
+   font-size: 1.1rem;
+   position:relative;
+   z-index: 1;
+   display:inline-grid;
+   place-items: center;
+   padding: 0 2em;
+   border-radius: 50%;
+   aspect-ratio: 1;
+   text-decoration: none;
+/*background-color: hsl( var(--clr-dark) / .8);*/
 }
 
 .large-button::after {
@@ -292,7 +289,7 @@ p{
     z-index: -1;
     width: 80%;
     height: 80%;
-    background: hsl( var(--clr-white) / .3);
+    background: hsl( var(--clr-white) / .1);
     border-radius: 50%;
     opacity: 0;
     transition: opacity 500ms linear, transform 750ms ease-in-out;
@@ -313,20 +310,16 @@ p{
 }
 
 .primary-header {
-    
-    grid-row: 1;
-    grid-column: 1/-1;
-    align-self: center;
-    justify-content: end;
-}
+    align-items: center;
+    justify-content:space-between;
+ }
 
 .primary-navigation {
     --gap: clamp(1.5rem, 5vw, 3.5rem);
-    --underline-gap: 3rem;
+    --underline-gap: 2rem;
     list-style: none;
     padding: 0;
-    margin: 0;
-    background: hsl( var(--clr-light) / 0.05);
+    background: hsl( var(--clr-white) / 0.05);
     backdrop-filter: blur(1.5rem);
 }
 
@@ -421,7 +414,7 @@ p{
     }
     
     .primary-navigation {
-        margin-block: .5rem;
+        margin-block: 2rem;
     }
     
    
@@ -430,9 +423,9 @@ p{
 
 .underline-indicators > * {
     cursor: pointer;
-    padding: var(--underline-gap, 0rem 0);
+    padding: var(--underline-gap, 5rem) 0;
     border: 0;
-    border-bottom: .2rem solid hsl( var(--clr-dark) / 0 );
+    border-bottom: .2rem solid hsl( var(--clr-white) / 0 );
     background-color: transparent;
 }
 
@@ -443,7 +436,7 @@ p{
 
 .underline-indicators > .active,
 .underline-indicators > [aria-selected="true"] {
-    color: hsl( var(--clr-dark) / 1);
+    color: hsl( var(--clr-white) / 1);
     border-color: hsl( var(--clr-white) / 1); 
 }
 
@@ -532,10 +525,7 @@ body {
 /* Layout                        */
 /* ----------------------------- */
 
-.div a{ grid-column:4;
-    grid-row:3;
 
-}
 .grid-container {
     text-align: center;
     display: grid;
@@ -574,6 +564,12 @@ body {
 }
 
 .destination-meta {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.destination-meta {
     flex-direction: column;
     border-top: 1px solid hsl( var(--clr-white) / .1);
     padding-top: 2.5rem;
@@ -587,13 +583,20 @@ body {
 /* crew layout */
 
 .grid-container--crew {
-    --flow-space: 2rem;
+    grid-template-columns: minmax(1rem, 1fr) minmax(0, 37rem) minmax(0, 23rem) minmax(1rem, 1fr);
+    justify-items: start;
     grid-template-areas: 
-        'title'
-        'image'
-        'tabs'
-        'content';
+        '. title title .'
+        '. content image .'
+        '. tabs image .';
 }
+
+.grid-container--crew > picture {
+    grid-column: span 2;
+    align-self: end; 
+    max-width: 90%;
+}
+
 
 .grid-container--crew > picture {
     grid-area: image;
@@ -619,19 +622,8 @@ body {
         margin-top: 2rem;
     }
     
-    .destination-meta {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    
-    .grid-container--crew {
-        padding-bottom: 0;
-        grid-template-areas: 
-            'title'
-            'content'
-            'tabs'
-            'image';
-    }
+  
+
     
     
 }
@@ -660,9 +652,9 @@ body {
         justify-items: start;
         align-content: start;
         grid-template-areas: 
-            '. title title .'
-            '. image tabs .'
-            '. image content .';
+            '.title title.'
+            '.image tabs.'
+            '.image content.';
     }
     
     .grid-container--destination > picture {
@@ -674,19 +666,5 @@ body {
         justify-content: start;
     }
     
-    .grid-container--crew {
-        grid-template-columns: minmax(1rem, 1fr) minmax(0, 37rem) minmax(0, 23rem) minmax(1rem, 1fr);
-        justify-items: start;
-        grid-template-areas: 
-            '. title title .'
-            '. content image .'
-            '. tabs image .';
-    }
-    
-    .grid-container--crew > picture {
-        grid-column: span 2;
-        align-self: end; 
-        max-width: 90%;
-    }
 
 }
