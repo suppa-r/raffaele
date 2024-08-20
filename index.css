@@ -2,6 +2,7 @@
 /* Custom properties   */
 /* ------------------- */
 
+
 :root {
     /* colors */
     --clr-dark: 230 35% 7%;
@@ -50,7 +51,7 @@
 /* Reset               */
 /* ------------------- */
 
-/* https://piccalil.li/blog/a-modern-css-reset/ */
+ /*https://piccalil.li/blog/a-modern-css-reset/ */
 
 /* Box sizing */
 *,
@@ -60,17 +61,8 @@
 }
 
 /* Reset margins */
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
-figure,
-picture {
-    margin: 0; 
-}
+
+
 
 h1,
 h2,
@@ -84,18 +76,83 @@ p {
 
 /* set up the body */
 body {
-    font-family: var(--ff-sans-normal);
-    font-size: var(--fs-400);
-    color: hsl( var(--clr-white) );
-    background-color: hsl( var(--clr-dark) );
+ 
+   
+ 
+ 
     line-height: 1.1;
     min-height: 100vh;
     
     display: grid;
-    grid-template-rows: min-content 1fr;
-    
-    overflow-x: hidden;
+    grid-template-rows:200px 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr auto;
+    background-image:url( SL.123119.26540.04.jpg);
+    overflow-y: hidden;
+
 }
+
+.primary-header{
+    grid-row: 1;
+}
+
+h1{
+
+    margin-left: 200px;
+    grid-row: 2;
+    grid-column: 1;
+    align-self: center;
+}
+
+h2{
+margin-top: 300px;
+    margin-left: 250px;
+    grid-row: 2;
+    grid-column: 1;
+    align-self: center;
+}
+p{
+  margin-top: 500px;
+    margin-left: 200px;
+    grid-row: 2;
+    grid-column: 1;
+    align-self: center;
+}
+
+.large-button {
+  
+    justify-self: center;
+    grid-column: 2;
+    margin-right: 50%;
+    grid-row: 2;
+    font-size: 2rem;
+    position: relative;
+    z-index: 1;
+    display: inline-grid;
+    place-items: center;
+    padding: 0 2em;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    text-decoration: none;
+}
+
+.large-button::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 50%;
+    height: 50%;
+    background: hsl( var(--clr-white) / .8);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 500ms linear, transform 750ms ease-in-out;
+}
+ 
+.large-button:hover::after,
+.large-button:focus::after {
+    opacity: 1;
+    transform: scale(1.5);
+}
+
 
 /* make images easier to work with */
 img,
@@ -133,7 +190,8 @@ select {
 
 .flex {
     display: flex;
-    gap: var(--gap, 1rem);
+    height:100px;
+    gap: var(--gap, .25rem);
 }
 
 .grid {
@@ -244,41 +302,15 @@ select {
 /* Compontents         */
 /* ------------------- */
 
-.large-button {
-    font-size: 2rem;
-    position: relative;
-    z-index: 1;
-    display: inline-grid;
-    place-items: center;
-    padding: 0 2em;
-    border-radius: 50%;
-    aspect-ratio: 1;
-    text-decoration: none;
-}
 
-.large-button::after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    width: 80%;
-    height: 80%;
-    background: hsl( var(--clr-white) / .1);
-    border-radius: 50%;
-    opacity: 0;
-    transition: opacity 500ms linear, transform 750ms ease-in-out;
-}
- 
-.large-button:hover::after,
-.large-button:focus::after {
-    opacity: 1;
-    transform: scale(1.5);
-}
+
+
 
 /* primary-header */
 
-.logo {
+/*.logo {
     margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
-}
+}*/
 
 .primary-header {
     justify-content: space-between;
