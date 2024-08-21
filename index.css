@@ -154,11 +154,8 @@ p{
 }
 
 bio {
- 
-   
- 
- 
-    line-height: 1.1;
+
+   line-height: 1.1;
     min-height: 100vh;
     
     display: grid;
@@ -169,9 +166,11 @@ bio {
 
 }
 
+
 sidebar{
     grid-column: 1;
     grid-row: 1;
+    color:aliceblue;
 }
 /* make images easier to work with */
 img,
