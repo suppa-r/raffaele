@@ -153,7 +153,26 @@ p{
     transform: scale(1.5);
 }
 
+bio {
+ 
+   
+ 
+ 
+    line-height: 1.1;
+    min-height: 100vh;
+    
+    display: grid;
+    grid-template-rows:200px 1fr 1fr;
+    grid-template-columns:auto 1fr;
+    background-image:url( SL.123119.26540.04.jpg);
+    overflow-y: hidden;
 
+}
+
+sidebar{
+    grid-column: 1;
+    grid-row: 1;
+}
 /* make images easier to work with */
 img,
 picture {

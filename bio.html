@@ -1,53 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <!-- Google fonts -->
+
+
+  <head>
+    <title>Raffaele Suppa | Web Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="index.css">
+    <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
       rel="stylesheet">
-      
-  <!-- Our custom CSS -->
-  <link rel="stylesheet" href="index.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
 
   <style>
-    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-    .w3-row-padding img {margin-bottom: 12px}
+ 
+    .w3-row-padding img {margin-bottom: 12px;}
     /* Set the width of the sidebar to 120px */
-    .w3-sidebar {width: 120px;background: #222;}
+   
+   .w3-sidebar {width:150px; background-color: #222;}
     /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-    #main {margin-left: 120px}
+    #main {margin-left: 150px;}
     /* Remove margins from "page content" on small screens */
     @media only screen and (max-width: 600px) {#main {margin-left: 0}}
     </style>
   <title>Raffaele Suppa's Website</title>
   <script src="navigation.js" defer></script>
 </head>
-<body class="body">
+<body class="bio">
  
- <!-- Icon Bar (Sidebar - hidden on small screens) -->
- <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
   <img src="https://www.w3schools.com/w3images/avatar_smoke.jpg" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+  <a href="#" class="w3-bar-item w3-button w3-padding-small w3-black">
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
   </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  <a href="#about" class="w3-bar-item w3-button w3-padding-small w3-hover-black">
     <i class="fa fa-user w3-xxlarge"></i>
     <p>ABOUT</p>
   </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-small w3-hover-black">
     <i class="fa fa-eye w3-xxlarge"></i>
     <p>PHOTOS</p>
   </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-small w3-hover-black">
     <i class="fa fa-envelope w3-xxlarge"></i>
     <p>CONTACT</p>
   </a>
@@ -71,83 +75,23 @@
 
 
 
-
-
-
-
-  <a class="skip-to-content" href="#main">Skip to content</a>
-  <header class="primary-header flex ">
+ <header class="primary-header flex ">
     <div>
       <img src="logo.svg" alt="space tourism logo" class="logo">
     </div>
     <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
     <nav>
-        <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
-            <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html"><span aria-hidden="true">00</span>Home</a>
-            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="bio.html"><span aria-hidden="true">01</span>Bio</a>
-            <li><a class="ff-sans-cond uppercase text-white  letter-spacing-2" href="architecture.html"><span aria-hidden="true">02</span>Architecture</a>
-              <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="perspective.html"><span aria-hidden="true">03</span>Fun</a>
-            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="photography.html"><span aria-hidden="true">04</span>Photography</a>
-              <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="contact.html"><span aria-hidden="true">05</span>Contact</a>
-              </ul>
-        </ul>
-    </nav>
+      <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+          <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html"><span aria-hidden="true">00</span>Home</a>
+          <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="bio.html"><span aria-hidden="true">01</span>Bio</a>
+          <li><a class="ff-sans-cond uppercase text-white  letter-spacing-2" href="architecture.html"><span aria-hidden="true">02</span>Architecture</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="perspective.html"><span aria-hidden="true">03</span>Fun</a>
+          <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="photography.html"><span aria-hidden="true">04</span>Photography</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="contact.html"><span aria-hidden="true">05</span>Contact</a>
+             <li></li> <img src="logo.svg" alt="space tourism logo" class="logo"></li>
+            </ul>
+      
+  </nav>
   </header>
-  
-  
-
-
-
-
-
-    <head>
-      <title>W3.CSS Template</title>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- 
-    </head>
-  <body class="w3-black">
-  
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-</body>
+  </body>
 </html>
