@@ -61,8 +61,8 @@
 
 /* Reset margins */
 body,
-h1,
-h2,
+
+
 h3,
 h4,
 h5,
@@ -94,16 +94,129 @@ body {
     min-height: 100vh;
     
     display: grid;
-    grid-template-rows: 25px 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
-  overflow-x: hidden;
+    grid-template-rows: auto  1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  /*overflow-x: hidden;*/
   overflow-y: hidden;
 }
+
+.large-button{
+    margin-top: 200px;
+    margin-left: 300px;
+    justify-self: center;
+   grid-column: 4;
+   grid-row: 2;
+ background-color: hsl( var(--clr-dark) / .8);
+  position:absolute;
+    display:inline-grid;
+
+    font-size: 1.1rem;
+
+    z-index: 1;
+
+    place-items: center;
+    padding: 0 1em;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    text-decoration: none;
+}
+
+.large-button::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 50%;
+    height: 50%;
+    background: hsl( var(--clr-white) / .3);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 500ms linear, transform 750ms ease-in-out;
+}
+ 
+.large-button:hover::after,
+.large-button:focus::after {
+    opacity: 1;
+    transform: scale(1.5);
+}
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 10px;
+    margin-bottom: 350px;
+    margin-left: 300px;
+    grid-row:2;
+    grid-column:1;
+    align-self:center;
+   
+}
+
+
+
+p{
+    margin-top: 250px;
+    margin-left: 0px;
+    grid-row: 2;
+    grid-column:2;
+    align-self:start;
+
+}
+
+
+
+
+
+
+bio {
+    /* position:fixed;*/
+     background-image: url(SL.123119.26540.04.jpg);
+     font-family: var(--ff-sans-normal);
+     font-size: var(--fs-400);
+     color: hsl( var(--clr-white) );
+     background-color: hsl( var(--clr-dark) );
+     line-height: 1.5;
+     min-height: 100vh;
+     
+     display: grid;
+     grid-template-rows: 1fr 1fr;
+     grid-template-columns: 1fr 1fr  1fr;
+   /*overflow-x: hidden;*/
+   overflow-y: hidden;
+ }
+
+ sidebar{
+    grid-row: 1;
+    grid-column: 1;
+    display: grid;
+ 
+ }
+ 
+ h1{
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-size: 10px;
+     margin-bottom: 350px;
+     margin-left: 300px;
+     grid-row:2;
+     grid-column:1;
+     align-self:center;
+    
+ }
+ 
+ 
+ 
+ p{
+     margin-top: 250px;
+     margin-left: 0px;
+     grid-row: 2;
+     grid-column:2;
+     align-self:start;
+ 
+ }
+
+
 
 
 /* make images easier to work with */
 img,
-picutre {
+picture {
     max-width: 100%;
     display: block;
 }
@@ -229,23 +342,7 @@ select {
 .fs-600 {
     line-height: 1.1;
 }
-h1{
-    margin-top: 100px;
-    margin-left: 130px;
-    grid-row: 4 / -1;
-    grid-column: 3;
-    align-self: start;
-   
-}
 
-p{
-    margin-top: 10px;
-    margin-left: 30px;
-    grid-row: 3;
-    grid-column:2/4;
-    align-self: start;
-
-}
 .numbered-title {
     font-family: var(--ff-sans-cond);
     font-size: var(--fs-500);
@@ -265,44 +362,7 @@ p{
 /* ------------------- */
 
 
-.large-button{
-    margin-top: 300px;
-    margin-left:45%;
-    justify-self: center;
-   grid-column: 6;
-   grid-row: 4;
- background-color: hsl( var(--clr-dark) / .8);
-  position:absolute;
-    display:inline-grid;
 
-    font-size: 1.1rem;
-
-    z-index: 1;
-
-    place-items: center;
-    padding: 0 1em;
-    border-radius: 50%;
-    aspect-ratio: 1;
-    text-decoration: none;
-}
-
-.large-button::after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    width: 50%;
-    height: 50%;
-    background: hsl( var(--clr-white) / .3);
-    border-radius: 50%;
-    opacity: 0;
-    transition: opacity 500ms linear, transform 750ms ease-in-out;
-}
- 
-.large-button:hover::after,
-.large-button:focus::after {
-    opacity: 1;
-    transform: scale(1.5);
-}
 
 /* primary-header */
 
@@ -438,13 +498,13 @@ p{
 
 .underline-indicators > *:hover,
 .underline-indicators > *:focus {
-    border-color: hsl( var(--clr-dark) / .5);
+    border-color: hsl( var(--clr-white) / .5);
 }
 
 .underline-indicators > .active,
 .underline-indicators > [aria-selected="true"] {
-    color: hsl( var(--clr-dark) / 1);
-    border-color: hsl( var(--clr-dark) / 1); 
+ color: hsl( var(--clr-white) /1);
+    border-color: hsl( var(--clr-white)/1);
 }
 
 .tab-list {
