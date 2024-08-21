@@ -20,9 +20,9 @@
   
     .w3-row-padding img {margin-bottom: 0px}
     /* Set the width of the sidebar to 120px */
-    .w3-sidebar {width: 120px; display:grid;background: #222;}
+    .w3-sidebar {width: 190px; display:grid;background: #222;}
     /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-    #main {margin-left: 120px}
+    #main {margin-left: 190px}
     /* Remove margins from "page content" on small screens */
     @media only screen and (max-width: 600px) {#main {margin-left: 0}}
     </style>
@@ -32,40 +32,35 @@
 <body class="bio">
  
  <!-- Icon Bar (Sidebar - hidden on small screens) -->
- <nav class="w3-sidebar  w3-black w3-bar-block w3-small w3-hide-small w3-center">
+ <nav class="w3-sidebar  w3-black w3-bar-block w3-large w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
   <img src="logo.svg" style="width:100%">
   <a href="genesis.html" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge "></i>
-    <p>GENESIS</p>
+    <i class="fa fa-home fs-500 "><br>GENESIS</i>
+   
   </a>
   <a href="ryerson.html" class="w3-bar-item w3-black w3-button w3-padding-large w3-hover-white">
-    <i class="fa fa-user fs-500">RYERSON</i>
-    
-  </a>
+    <i class="fa fa-user fs-500"><br>RYERSON</i>
+    </a>
+    <a href="skills.html" class="w3-bar-item w3-black w3-button w3-padding-large w3-hover-white">
+      <i class="fa fa-yser fs-500"><br>SKILLS</i>
+    </a>
   <a href="architecture.html" class="w3-bar-item  w3-black w3-button w3-padding-large w3-hover-white">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p>ARCHITECTURE</p>
-  </a>
+    <i class="fa fa-eye fs-500"><br>ARCHITECTURE</i>
+ </a>
   <a href="photography.html" class="w3-bar-item w3-black w3-button w3-padding-large w3-hover-white">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>PHOTOGRAPHY</p>
+    <i class="fa fa-envelope fs-500"><br>PHOTOGRAPHY</i>
   </a>
   <a href="perspective.html" class="w3-bar-item w3-black w3-button w3-padding-large w3-hover-white">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>FUN</p>
-  </a>
-  <a href="skills.html" class="w3-bar-item w3-black w3-button w3-padding-large w3-hover-white">
-    <i class="fa fa-phone fa-fw w3-xxlarge"></i>
-    <p>SKILLS</p>
+    <i class="fa fa-envelope fs-500"><br>FUN</i>
+ </a>
+ 
     <a href="contact.html" class="w3-bar-item w3-black w3-button w3-padding-large w3-hover-white">
-      <i class="fa fa-home w3-xxlarge"></i>
-      <p>CONTACT</p>
-    </a>
-    <a href="index.html" class="w3-bar-item w3-black w3-button w3-padding-large w3-hover-white">
-      <i class="fa fa-phone fa-fw w3-xxlarge"></i>
-      <p>HOME</p>
-    </a>
+      <i class="fa fa-phone fs-500"><br>CONTACT</i>
+   </a>
+   <a href="index.html" class="w3-bar-item w3-black w3-button w3-padding-large w3-hover-white">
+    <i class="fa fa-home fs-500"><br>HOME</i>
+  </a>
   </nav>
 
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
