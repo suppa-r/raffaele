@@ -59,14 +59,14 @@
     box-sizing: border-box;
 }
 
-/* Reset margins */
+/* Reset margins 
 body,
 h1,
 h2,
 h3,
 h4,
 h5,
-p,
+p,*/
 figure,
 picture {
     margin: 0; 
@@ -94,16 +94,38 @@ body {
     min-height: 100vh;
     
     display: grid;
-    grid-template-rows: 25px 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
-  overflow-x: hidden;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+
   overflow-y: hidden;
 }
 
+h1{
+    margin-top: 100px;
+    margin-left: 230px;
+    grid-row: 2;
+    grid-column:1;
+    align-self:center;
+   
+}
+h2{
+    margin-top: 100px;
+    margin-left: 230px;
+    grid-row:3;
+    grid-column:1;
+    align-self: center;
+   
+}
 
+p{
+    margin-top: 10px;
+    margin-left: 230px;
+    grid-row:4;
+    grid-column:1;
+    align-self: center;
 /* make images easier to work with */
 img,
-picutre {
+picture {
     max-width: 100%;
     display: block;
 }
@@ -229,21 +251,7 @@ select {
 .fs-600 {
     line-height: 1.1;
 }
-h1{
-    margin-top: 100px;
-    margin-left: 130px;
-    grid-row: 4 / -1;
-    grid-column: 3;
-    align-self: start;
-   
-}
 
-p{
-    margin-top: 10px;
-    margin-left: 30px;
-    grid-row: 3;
-    grid-column:2/4;
-    align-self: start;
 
 }
 .numbered-title {
@@ -315,7 +323,7 @@ p{
 .primary-header {
     
     grid-row: 1;
-    grid-column: 1/-1;
+    grid-column: 1;
     align-self: center;
     justify-content: end;
 }
@@ -326,7 +334,7 @@ p{
     list-style: none;
     padding: 0;
     margin: 0;
-    background: hsl( var(--clr-light) / 0.05);
+    background: hsl( var(--clr-dark) / 0.05);
     backdrop-filter: blur(1.5rem);
 }
 
@@ -438,13 +446,13 @@ p{
 
 .underline-indicators > *:hover,
 .underline-indicators > *:focus {
-    border-color: hsl( var(--clr-dark) / .5);
+    border-color: hsl( var(--clr-white) / .5);
 }
 
 .underline-indicators > .active,
 .underline-indicators > [aria-selected="true"] {
     color: hsl( var(--clr-dark) / 1);
-    border-color: hsl( var(--clr-dark) / 1); 
+    border-color: hsl( var(--clr-white) / 1); 
 }
 
 .tab-list {
