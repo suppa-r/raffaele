@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,34 +13,84 @@
       
   <!-- Our custom CSS -->
   <link rel="stylesheet" href="index.css">
-  <title>Raffaele Suppa | Website</title>
+  <link rel="stylesheet" href="css.css">
+
+
+  <style>
+  
+    .w3-row-padding img {margin-bottom: 0px}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 155px; display:grid; background: #222;}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 155px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    </style>
+  <title>Raffaele Suppa's Website</title>
   <script src="navigation.js" defer></script>
-  <script src="tabs.js" defer></script>
-
 </head>
-
-<body class="genesis">
+<body class="bio">
  
-  <header class="primary-header flex">
+ <!-- Icon Bar (Sidebar - hidden on small screens) -->
+ <nav class="w3-sidebar  w3-black w3-bar-block w3-large w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="logo.svg" style="width:100%">
+  <a href="genesis.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home ff-sans-cond uppercase text-white  letter-spacing-2 "><br>GENESIS</i>
+   
+  </a>
+  <a href="ryerson.html" class="w3-bar-item w3-black w3-button w3-padding-large w3-hover-white">
+    <i class="fa fa-user ff-sans-cond uppercase text-white  letter-spacing-2"><br>RYERSON</i>
+    </a>
+    <a href="skills.html" class="w3-bar-item w3-black w3-button w3-padding-large w3-hover-white">
+      <i class="fa fa-user ff-sans-cond uppercase text-white  letter-spacing-2"><br>SKILLS</i>
+    </a>
+  <a href="architecture.html" class="w3-bar-item  w3-black w3-button w3-padding-large w3-hover-white">
+    <i class="fa fa-eye ff-sans-cond uppercase text-white  letter-spacing-2"><br>ARCHITECTURE</i>
+ </a>
+  <a href="photography.html" class="w3-bar-item w3-black w3-button w3-padding-large w3-hover-white">
+    <i class="fa fa-envelope ff-sans-cond uppercase text-white  letter-spacing-2"><br>PHOTOGRAPHY</i>
+  </a>
+  <a href="perspective.html" class="w3-bar-item w3-black w3-button w3-padding-large w3-hover-white">
+    <i class="fa fa-envelope ff-sans-cond uppercase text-white  letter-spacing-2"><br>FUN</i>
+ </a>
+ 
+    <a href="contact.html" class="w3-bar-item w3-black w3-button w3-padding-large w3-hover-white">
+      <i class="fa fa-phone ff-sans-cond uppercase text-white  letter-spacing-2"><br>CONTACT</i>
+   </a>
+   <a href="index.html" class="w3-bar-item w3-black w3-button w3-padding-large w3-hover-white">
+    <i class="fa fa-home ff-sans-cond uppercase text-white  letter-spacing-2"><br>HOME</i>
+  </a>
+  </nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<a class="skip-to-content" href="#main">Skip to content</a>
+  <header class="primary-header flex ">
     <div>
       <img src="logo.svg" alt="space tourism logo" class="logo">
     </div>
-   
-    <nav> 
-     
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+    <nav>
         <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
-       
-            <li><a class="ff-sans-cond uppercase text-dark letter-spacing-2" href="beginnings.html"><span aria-hidden="true"></span>Beginnings</a>
-              <li><a class="ff-sans-cond uppercase  text-dark letter-spacing-2" href="ryerson.html"><span aria-hidden="true"></span>Ryerson</a>
-              <li><a class="ff-sans-cond uppercase  text-dark letter-spacing-2" href="text.html"><span aria-hidden="true"></span>Skills</a>
-                <li><a class="ff-sans-cond uppercase  text-dark letter-spacing-2" href="genesis.html"><span aria-hidden="true"></span>Bio</a>
-              <li><a class="ff-sans-cond uppercase text-dark letter-spacing-2" href="index.html"><span aria-hidden="true"></span>Home</a>
-              </ul>
-        </ul>
-       </nav>
-   </header>
-  
-  <article class="genesis-info">
+           
+          
+            <li><a class="ff-sans-cond uppercase text-white  letter-spacing-2" href="architecture.html"><span aria-hidden="true">02</span>Architecture</a></li>
+              <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="perspective.html"><span aria-hidden="true">03</span>Fun</a></li>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="photography.html"><span aria-hidden="true">04</span>Photography</a></li>
+              <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html"><span aria-hidden="true">05</span>Home</a></li>
+           </ul>
+        </nav>
+  </header>
+ 
    
     <h4 class=" ff-sans-cond letter-spacing-3 d-block">
     The Divine Spark of Genius began in the Embryonic Form (God was showing off, Again)<br> 
@@ -52,10 +102,10 @@
        
 
 
-  <picture id="genesis-image">
+
    <img src="young-me.png" alt="raffaele">
  
-    </picture>
-   
+  
+
 </body>
 </html>
