@@ -43,7 +43,7 @@
         --fs-600: 2rem;
         --fs-500: 1.75rem;
         --fs-400: 1.125rem;
-        --fs-300: .925rem;
+        --fs-300: .725rem;
     }
 }
 
@@ -116,22 +116,30 @@ body.bio {
     
      background-image: url(background-crew-desktop.jpg);
      display: grid;
-     grid-template-rows:1fr 1fr 1fr;
-     grid-template-columns: 1fr 1fr;
+     grid-template-rows:1fr 1fr;
+     grid-template-columns: 1fr 1fr 1fr;
    /*overflow-x: hidden;*/
    overflow-y: hidden;
    grid-template-areas:
-   "h h"
-   "s c"
-   "s c"
+   "h h h"
+   "s h1 c"
+   
+   
    ;
   }
- body.magic{
+
+ body.bio > magic{
     grid-area:c;
     margin-left:0%;
-    align-items: end;
-    
+    align-items:center;
  }
+body.bio > h1{
+    grid-area: h1;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+} 
+
+
  header{
      grid-area:h
  }
