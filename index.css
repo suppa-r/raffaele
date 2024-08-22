@@ -94,7 +94,7 @@ body {
     min-height: 100vh;
     
     display: grid;
-    grid-template-rows: auto  1fr 1fr;
+    grid-template-rows:200px 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   /*overflow-x: hidden;*/
   overflow-y: hidden;
@@ -102,7 +102,7 @@ body {
 
 .large-button{
     margin-top: 200px;
-    margin-left: 300px;
+    margin-left: 350px;
     justify-self: center;
    grid-column: 4;
    grid-row: 2;
@@ -141,10 +141,10 @@ body {
 h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 10px;
-    margin-bottom: 350px;
-    margin-left: 300px;
+    margin-bottom: 250px;
+    margin-right: 100px;
     grid-row:2;
-    grid-column:1;
+    grid-column:2;
     align-self:center;
    
 }
@@ -165,7 +165,7 @@ p{
 
 
 
-bio {
+genesis {
     /* position:fixed;*/
      background-image: url(SL.123119.26540.04.jpg);
      font-family: var(--ff-sans-normal);
@@ -176,10 +176,16 @@ bio {
      min-height: 100vh;
      
      display: grid;
-     grid-template-rows: 1fr 1fr;
+     grid-template-rows: 1fr auto;
      grid-template-columns: 1fr 1fr  1fr;
    /*overflow-x: hidden;*/
    overflow-y: hidden;
+ }
+
+ genesis > img{
+    grid-row:2;
+    grid-column: 3;
+    margin-left: 100px;
  }
 
  sidebar{
@@ -188,14 +194,29 @@ bio {
     display: grid;
  
  }
+
+ h4{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    margin-bottom: 0px;
+    margin-left: 100px;
+    grid-row:2;
+    grid-column:2;
+    align-self:center;
+   
+}
  
+h3{
+    grid-row:3;
+    grid-column: 2;
+}
  h1{
      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
      font-size: 10px;
      margin-bottom: 350px;
      margin-left: 300px;
      grid-row:2;
-     grid-column:1;
+     grid-column:2;
      align-self:center;
     
  }
