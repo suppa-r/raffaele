@@ -66,7 +66,7 @@ body{margin:0}
 /* set up the body */
 body {
    /* position:fixed;*/
-  min-height: 100vh;
+  /*min-height: 100vh;*/
     background-image: url(SL.123119.26540.04.jpg);
     display: grid;
     grid-template-rows:200px 10% 10% 1fr;
@@ -104,7 +104,7 @@ h2{
 }
 
 p{
-   
+   margin-bottom: 0px;
   margin-left:100px;
    grid-area: p;
 }
@@ -113,6 +113,7 @@ p{
 bio {
     /* position:fixed;*/
     min-height: 100vh;
+    
      background-image: url(background-crew-desktop.jpg);
      display: grid;
      grid-template-rows:auto 1fr;
@@ -120,10 +121,9 @@ bio {
    /*overflow-x: hidden;*/
    overflow-y: hidden;
    grid-template-areas:
-   "s h"
+   "h h"
    "s .";
-  
- }
+  }
  
  header{
      grid-area:h
