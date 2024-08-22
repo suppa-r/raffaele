@@ -7,6 +7,7 @@
     --clr-dark: 230 35% 7%;
     --clr-light: 231 77% 90%;
     --clr-white: 0 0% 100%;
+    --clr-blue: 0 0% 100%;
     
     /* font-sizes */
     --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
@@ -64,18 +65,18 @@ body{margin:0}
 /* set up the body */
 body {
    /* position:fixed;*/
-   height:100%;
+  min-height: 100vh;
     background-image: url(SL.123119.26540.04.jpg);
     display: grid;
-    grid-template-rows:200px 10% 10% 30%;
+    grid-template-rows:200px 10% 10% 1fr;
     grid-template-columns: 1fr 1fr 1fr;
   /*overflow-x: hidden;*/
   overflow-y: hidden;
   grid-template-areas:
   "h h h"
-  ". h1 a"
-  ". h2 ."
-  ". p .";
+  "h1 h1 a"
+  "h2 h2 ."
+  "p p .";
 }
 
 header{
@@ -86,23 +87,94 @@ h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 14px;
     grid-area: h1;
-    margin-right: 250px;
-    margin-top: 100px;
+    margin-right:300px;
+   
 }
 
 h2{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     grid-area: h2;
     font-size: 22px;
-    margin-top: 300px;
+  font-stretch: 100%;
+    margin-left: 0px;
+  
+
+
+}
+
+p{
+   
+  margin-left:100px;
+   grid-area: p;
 }
 
 
+bio {
+    /* position:fixed;*/
+    min-height: 100vh;
+     background-image: url(SL.123119.26540.04.jpg);
+     display: grid;
+     grid-template-rows:auto 1fr;
+     grid-template-columns: 1fr 1fr;
+   /*overflow-x: hidden;*/
+   overflow-y: hidden;
+   grid-template-areas:
+   "s h"
+   "s .";
+  
+ }
+ 
+ header{
+     grid-area:h
+ }
+w3-sidebar{
+    grid-area:s ;}
 
-p{
-    margin-top: 20px;
-    margin-right: 200px;
-   grid-area: p;
+
+ genesis {
+    /* position:fixed;*/
+     background-image: url(SL.123119.26540.04.jpg);
+     line-height: 1.5;
+     min-height: 100vh;
+     display: grid;
+     grid-template-rows:auto 1fr 1fr;
+     grid-template-columns: 1fr 1fr  1fr;
+     overflow-y: hidden;
+     grid-template-areas: 
+     "h h h"
+     "s h4 ."
+     ". h3 image";
+ }
+
+
+w3-sidebar{
+ 
+  grid-area:s ;
+ }
+
+ h4{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    align-self:center;
+   
+}
+ 
+h3{
+    grid-area: h3;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+    align-self:center;
+}
+
+img{grid-area: image;}
+
+
+
+/* make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
 }
 
 .large-button{
@@ -137,72 +209,6 @@ p{
     opacity: 1;
     transform: scale(1.5);
 }
-
-
-
-
-
-
-
-
-
-genesis {
-    /* position:fixed;*/
-     background-image: url(SL.123119.26540.04.jpg);
-     font-family: var(--ff-sans-normal);
-     font-size: var(--fs-400);
-     color: hsl( var(--clr-white) );
-     background-color: hsl( var(--clr-dark) );
-     line-height: 1.5;
-     min-height: 100vh;
-     
-     display: grid;
-     grid-template-rows: 1fr auto;
-     grid-template-columns: 1fr 1fr  1fr;
-   /*overflow-x: hidden;*/
-   overflow-y: hidden;
- }
-
- genesis > img{
-    grid-row:2;
-    grid-column: 3;
-    margin-left: 100px;
- }
-
- sidebar{
-    grid-row: 1;
-    grid-column: 1;
-    display: grid;
- 
- }
-
- h4{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
-    margin-bottom: 0px;
-    margin-left: 100px;
-    grid-row:2;
-    grid-column:2;
-    align-self:center;
-   
-}
- 
-h3{
-    grid-row:3;
-    grid-column: 2;
-}
-
-
-
-
-
-/* make images easier to work with */
-img,
-picture {
-    max-width: 100%;
-    display: block;
-}
-
 /* make form elements easier to work with */
 input,
 button,
@@ -296,7 +302,7 @@ select {
 .text-dark { color: hsl( var(--clr-dark) );}
 .text-accent { color: hsl( var(--clr-light) );}
 .text-white { color: hsl( var(--clr-white) );}
-
+.text-blue { color: hsl( var(--clr-blue) );}
 /* typography */
 
 .ff-serif { font-family: var(--ff-serif); } 
@@ -322,7 +328,7 @@ select {
 .fs-800,
 .fs-700,
 .fs-600 {
-    line-height: 1.1;
+    line-height: 1.2;
 }
 
 .numbered-title {
@@ -349,8 +355,8 @@ select {
 /* primary-header */
 
 .logo {
-   /* clamp(1.5rem, 5vw, 3.5rem);*/
-   margin: 5.5rem ;
+  
+   margin: 5.5rem;
    margin-top: 5rem ;
 }
 
