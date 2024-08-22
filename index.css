@@ -113,7 +113,7 @@ p{
 bio {
     /* position:fixed;*/
     min-height: 100vh;
-     background-image: url(SL.123119.26540.04.jpg);
+     background-image: url(background-crew-desktop.jpg);
      display: grid;
      grid-template-rows:auto 1fr;
      grid-template-columns: 1fr 1fr;
@@ -168,6 +168,11 @@ h3{
 }
 
 img{grid-area: image;}
+.genesis > picture {
+    grid-area: image;
+    max-width: 60%;
+    border-bottom: 1px solid hsl( var(--clr-white) / .1);
+}
 
 
 
@@ -421,7 +426,7 @@ select {
         right: 1rem;
         top: 2rem;
         background: transparent;
-        background-image: url(./assets/shared/icon-hamburger.svg);
+        background-image: url(icon-hamburger.svg);
         background-repeat: no-repeat;
         background-position: center;
         width: 1.5rem;
@@ -430,7 +435,7 @@ select {
     }
     
     .mobile-nav-toggle[aria-expanded="true"] {
-        background-image: url(./assets/shared/icon-close.svg);
+        background-image: url(icon-close.svg);
     }
     
     .mobile-nav-toggle:focus-visible {
@@ -559,25 +564,25 @@ body {
 
 @media (min-width: 45rem) {
     .destination {
-        background-image: url(./assets/destination/background-destination-desktop.jpg);
+        background-image: url(background-destination-desktop.jpg);
     }
 } 
 
 /* crew */
 .crew {
-    background-image: url(./assets/home/background-crew-mobile.jpg);
+    background-image: url(background-crew-mobile.jpg);
 }
 
 @media (min-width: 35rem) {
     .crew {
         background-position: center center;
-        background-image: url(./assets/crew/background-crew-tablet.jpg);
+        background-image: url(background-crew-tablet.jpg);
     }
 }
 
 @media (min-width: 45rem) {
     .crew {
-        background-image: url(./assets/crew/background-crew-desktop.jpg);
+        background-image: url(background-crew-desktop.jpg);
     }
 } 
 
@@ -585,10 +590,7 @@ body {
 /* Layout                        */
 /* ----------------------------- */
 
-.div a{ grid-column:4;
-    grid-row:3;
 
-}
 .grid-container {
     text-align: center;
     display: grid;
