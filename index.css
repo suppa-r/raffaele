@@ -149,7 +149,7 @@ w3-sidebar{
 
  body.genesis {
     /* position:fixed;*/
-     background-image: url(SL.123119.26540.04.jpg);
+     background-image: url(background-crew-desktop.jpg);
      line-height: 1.5;
      min-height: 100vh;
      display: grid;
@@ -158,8 +158,8 @@ w3-sidebar{
      overflow-y: hidden;
      grid-template-areas: 
      "h h h"
-     "s h4 ."
-     ". h3 image";
+     "s h4 image"
+     "s h3 image";
  }
 
 
@@ -168,35 +168,174 @@ w3-sidebar{
   grid-area:s ;
  }
 
- h4{
+ body.genesis > h4{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 15px;
-    align-self:center;
-   
+    margin-top: 100px;
+    grid-area: h4;
 }
  
-h3{
+body.genesis > h3{
     grid-area: h3;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 22px;
-    align-self:center;
+    margin-top: 50px;
+    
 }
 
-picture{
+body.genesis > picture{
     
     grid-area: image;
-    max-width: 60%;
+    max-width: 70%;
     border-bottom: 1px solid hsl( var(--clr-white) / .1);
+    margin-top: 100px;
 }
+
+
+body.ryerson {
+    /* position:fixed;*/
+     background-image: url(background-crew-desktop.jpg);
+     line-height: 1.5;
+     min-height: 100vh;
+     display: grid;
+     grid-template-rows:140px 120px auto auto;
+     grid-template-columns:200px 1fr 1fr 1fr;
+     overflow-y: hidden;
+     grid-template-areas: 
+     "s h h h"
+     "s h1 h1 image"
+     "s h2 h2 image"
+     "s h3 h3 image";
+ }
+
+
+body.ryerson > w3-sidebar{
+ 
+  grid-area:s ;
+ }
+
+ body.ryerson > h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+    grid-area: h1;
+  
+   
+}
+
+body.ryerson > h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    grid-area: h2;
+   
+  
+   
+}
+
+
+body.ryerson > h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+    grid-area: h3;
+  
+   
+}
+
+  
+   
+
+body.ryerson > picture{
+    
+    grid-area: image;
+    max-width: 70%;
+    border-bottom: 1px solid hsl( var(--clr-white) / .1);
+   
+}
+
+
+body.beginnings {
+    /* position:fixed;*/
+     background-image: url(background-crew-desktop.jpg);
+     line-height: 1.5;
+     min-height: 100vh;
+     display: grid;
+     grid-template-rows:140px 150px 100px 150px 150px 150px;
+     grid-template-columns:200px 1fr 1fr 1fr;
+     overflow-y: hidden;
+     grid-template-areas: 
+     "s h h h"
+     "s h1 h1 image"
+     "s h2 h2 image"
+     "s h3 h3 image"
+     "s h4 h4 image"
+     "s h5 h5 .";
+ }
+ body.beginnings > header{
+ 
+    grid-area:h ;
+   }
+
+body.beginnings > w3-sidebar{
+ 
+  grid-area:s ;
+ }
+
+ body.beginnings > h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+    grid-area: h1;
+  
+   
+}
+
+body.beginnings > h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    grid-area: h2;
+   
+  
+   
+}
+
+
+body.beginnings > h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+    grid-area: h3;
+  
+   
+}
+
+body.beginnings > h4 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    grid-area: h4;
+  
+   
+}  
+body.beginnings > h5 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+    grid-area: h5;
+  
+   
+}    
+
+body.beginnings > picture{
+    
+    grid-area: image;
+    max-width: 40%;
+    max-height:50%;
+    border-bottom: 1px solid hsl( var(--clr-white) / .1);
+   
+}
+
+
+
 
 
 
 /* make images easier to work with */
-img,
-picture {
-    max-width: 100%;
-    display: block;
-}
+
 
 .large-button{
   grid-area: a;
