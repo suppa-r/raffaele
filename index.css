@@ -333,9 +333,34 @@ body.beginnings > picture{
 }
 
 
+body.perspective {
+    /* position:fixed;*/
+    /* background-image: url(background-crew-desktop.jpg);*/
+    background-color: black;
+     line-height: 1.5;
+     min-height: 100vh;
+     display: grid;
+     grid-template-rows:140px auto ;
+     grid-template-columns:200px 1fr 1fr; 
+     overflow-y: hidden;
+     grid-template-areas: 
+     "s h h h"
+     "s c c c"
+    ;
+ }
+ body.perspective > header{
+ 
+    grid-area:h ;
+   }
 
-
-
+   body.perspective > canvas{
+ 
+    grid-area:c ;
+   }
+   body.perspective > w3-sidebar{
+ 
+    grid-area:s ;
+   }
 
 /* make images easier to work with */
 
