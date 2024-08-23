@@ -153,8 +153,8 @@ w3-sidebar{
      line-height: 1.5;
      min-height: 100vh;
      display: grid;
-     grid-template-rows:auto 1fr 1fr;
-     grid-template-columns: 1fr 1fr  1fr;
+     grid-template-rows:150px 1fr 200px;
+     grid-template-columns:200px 1fr  1fr;
      overflow-y: hidden;
      grid-template-areas: 
      "h h h"
@@ -187,8 +187,9 @@ body.genesis > picture{
     
     grid-area: image;
     max-width: 70%;
+    max-height:50%;
     border-bottom: 1px solid hsl( var(--clr-white) / .1);
-    margin-top: 100px;
+    
 }
 
 
@@ -258,7 +259,7 @@ body.beginnings {
      line-height: 1.5;
      min-height: 100vh;
      display: grid;
-     grid-template-rows:140px 150px 100px 150px 150px 150px;
+     grid-template-rows:140px 100px 80px 80px 200px 200px;
      grid-template-columns:200px 1fr 1fr 1fr;
      overflow-y: hidden;
      grid-template-areas: 
@@ -266,7 +267,7 @@ body.beginnings {
      "s h1 h1 image"
      "s h2 h2 image"
      "s h3 h3 image"
-     "s h4 h4 image"
+     "s h4 h4 ."
      "s h5 h5 .";
  }
  body.beginnings > header{
@@ -281,9 +282,9 @@ body.beginnings > w3-sidebar{
 
  body.beginnings > h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     grid-area: h1;
-  
+    margin-left: 100px;
    
 }
 
@@ -291,6 +292,7 @@ body.beginnings > h2{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
     grid-area: h2;
+    margin-left: 100px;
    
   
    
@@ -299,9 +301,9 @@ body.beginnings > h2{
 
 body.beginnings > h3 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     grid-area: h3;
-  
+    margin-left: 100px;
    
 }
 
@@ -309,14 +311,15 @@ body.beginnings > h4 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
     grid-area: h4;
-  
+    margin-left: 100px;
+   
    
 }  
 body.beginnings > h5 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     grid-area: h5;
-  
+    margin-left: 100px;
    
 }    
 
