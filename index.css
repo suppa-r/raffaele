@@ -316,8 +316,8 @@ body.beginnings > h4 {
    
 }  
 body.beginnings > h5 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 19px;
     grid-area: h5;
     margin-left: 100px;
    
