@@ -199,7 +199,7 @@ body.ryerson {
      line-height: 1.5;
      min-height: 100vh;
      display: grid;
-     grid-template-rows:140px 120px auto auto;
+     grid-template-rows:140px 90px auto auto;
      grid-template-columns:200px 1fr 1fr 1fr;
      overflow-y: hidden;
      grid-template-areas: 
@@ -217,7 +217,7 @@ body.ryerson > w3-sidebar{
 
  body.ryerson > h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 22px;
+    font-size: 16px;
     grid-area: h1;
   
    
@@ -235,7 +235,7 @@ body.ryerson > h2{
 
 body.ryerson > h3 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 22px;
+    font-size: 18px;
     grid-area: h3;
   
    
@@ -247,7 +247,7 @@ body.ryerson > h3 {
 body.ryerson > picture{
     
     grid-area: image;
-    max-width: 70%;
+    max-width: 50%;
     border-bottom: 1px solid hsl( var(--clr-white) / .1);
    
 }
@@ -256,19 +256,17 @@ body.ryerson > picture{
 body.beginnings {
     /* position:fixed;*/
      background-image: url(background-crew-desktop.jpg);
-     line-height: 1.5;
+     line-height: 1.2;
      min-height: 100vh;
      display: grid;
-     grid-template-rows:140px 200px 80px 80px 200px 200px;
-     grid-template-columns:200px 1fr 1fr 1fr;
+     grid-template-rows:120px 60px auto;
+     grid-template-columns:200px 1fr 1fr 1fr 1fr;
      overflow-y: hidden;
      grid-template-areas: 
-     "s h h h"
-     "s h1 h1 image"
-     "s h2 h2 image"
-     "s h3 h3 image"
-     "s h4 h4 ."
-     "s h5 h5 .";
+     "s h h h h"
+     "s h1 h1 . image"
+     "s n n n image"
+     ;
  }
  body.beginnings > header{
  
@@ -282,53 +280,62 @@ body.beginnings > w3-sidebar{
 
  body.beginnings > h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
+    font-size: 13px;
     grid-area: h1;
-    margin-left: 100px;
+  
+   margin-left:170px;
    
 }
 
 body.beginnings > h2{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 16px;
+    font-size: 13px;
     grid-area: h2;
-    margin-left: 100px;
-   
-  
-   
 }
+   
+ body.beginnings > article.notes{
+    grid-area: n;
+    margin-left:25px;
+  
+ 
+
+ } 
+   
+
 
 
 body.beginnings > h3 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
+    font-size: 12px;
     grid-area: h3;
-    margin-left: 100px;
+
    
 }
 
-body.beginnings > h4 {
+body.beginnings > h6 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 16px;
-    grid-area: h4;
-    margin-left: 100px;
+    font-size: 10px;
+    grid-area: h6;
+   
    
    
 }  
+
 body.beginnings > h5 {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 19px;
+    font-size: 13px;
     grid-area: h5;
-    margin-left: 100px;
+   
    
 }    
 
 body.beginnings > picture{
     
     grid-area: image;
-    max-width: 40%;
+    max-width: 30%;
     max-height:50%;
     border-bottom: 1px solid hsl( var(--clr-white) / .1);
+ 
    
 }
 
