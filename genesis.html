@@ -1,88 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
-        rel="stylesheet">
-    <!-- Our custom CSS -->
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="css.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-   
-      .w3-row-padding img {margin-bottom: 12px}
-    
-     /* Set the width of the sidebar to 120px */
-      .w3-sidebar {width: 200px; position:fixed; overflow-y:hidden; background-color: #222;}
-      /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-      #main {margin-left: 200px}
-      /* Remove margins from "page content" on small screens */
-      @media only screen and (max-width: 600px) {#main {margin-left: 0}}
-      </style>
-    <title>Raffaele Suppa's | Website</title>
-    <script src="navigation.js" defer></script>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <body class="genesis">
-  <!-- Icon Bar (Sidebar - hidden on small screens) -->
-  <nav class="w3-sidebar  w3-white w3-bar-block w3-large w3-hide-small w3-center">
-    <!-- Avatar image in top left corner -->
-    <img src="revit-1.jpg" style="width:100%">
-   
-    <a href="beginnings.html" class="w3-bar-item  w3-center w3-black w3-button w3-padding-24 ">
-      <i class="fa fa-university ff-sans-cond uppercase text-white  letter-spacing-2"><br>BEGINNINGS</i>
-      </a>
-      <a href="ryerson.html" class="w3-bar-item  w3-center w3-black w3-button w3-padding-24">
-        <i class="fa fa-book fs-300 ff-sans-cond uppercase text-white  letter-spacing-2"><br>RYERSON</i>
-      </a>
-    <a href="skills.html" class="w3-bar-item  w3-black w3-button w3-padding-24">
-      <i class="fa fa-pencil fs-300 ff-sans-cond uppercase text-white  letter-spacing-2"><br>MY SKILLS</i>
-   </a>
-    <a href="photography.html" class="w3-bar-item w3-center w3-black w3-button w3-padding-24">
-      <i class="fa fa-camera fs-300 ff-sans-cond uppercase text-white  letter-spacing-2"><br>PHOTOGRAPHY</i>
-    </a>
-    <a href="perspective.html" class="w3-bar-item w3-center w3-black w3-button w3-padding-24">
-      <i class="fa fa-envelope fs-300 ff-sans-cond uppercase text-white  letter-spacing-2"><br>FUN</i>
-   </a>
-    <a href="contact.html" class="w3-bar-item w3-center w3-black w3-buttonw w3-padding-24">
-        <i class="fa fa-phone fs-300 ff-sans-cond uppercase text-white  letter-spacing-2"><br>CONTACT</i>
-     </a>
-     <a href="index.html" class="w3-bar-item w3-center w3-black w3-button w3-padding-24">
-      <i class="fa fa-home fs-300 ff-sans-cond uppercase text-white  letter-spacing-2"><br>START OVER</i>
-    </a>
-    <a href="bio.html" class="w3-bar-item w3-button w3-padding-24 w3-black">
-      <i class="fa fa-home fs-300 ff-sans-cond uppercase text-white  letter-spacing-2"><br>PROFILE</i>
-     </a>
-    </nav>
-<header class="primary-header flex ">
-  <nav>
-     <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
-          <li><a> <img src="logo.svg" alt="space tourism logo" class="logo"></a></li>
-          <li><a class="ff-sans-cond uppercase text-white  letter-spacing-2" href="architecture.html"><span aria-hidden="true">01</span>Architecture</a></li>
-          <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="perspective.html"><span aria-hidden="true">02</span>Fun</a></li>
-          <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="photography.html"><span aria-hidden="true">03</span>Photography</a></li>
-          <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="bio.html"><span aria-hidden="true">04</span>Bio</a></li>
-          <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html"><span aria-hidden="true">05</span>Start</a></li>
-          </ul>
-  </nav>
-</header>
+  <link rel="icon" type="png" sizes="32x32" href="favicon-32x32.png">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet">
+      
+  <!-- Our custom CSS -->
+  <link rel="stylesheet" href="index.css">
+  <title>Raffaele Suppa | Website</title>
+  <script src="navigation.js" defer></script>
+  <script src="tabs.js" defer></script>
+
+</head>
+
+<body class="genesis">
  
+  <header class="primary-header flex">
+    <div>
+      <img src="logo.svg" alt="space tourism logo" class="logo">
+    </div>
    
-    <h4 class=" ff-sans-cond w3-center ss-seriff text-white letter-spacing-3 d-block">
-    The Divine Spark of Genius, and the all around tremendous talent, began in the Embryonic Form (God was showing off, Again)<br> 
-    But this is the moment that miracle took effect and became the physical substance of Answered Prayer.....had to be my Mom's intercession!<br><br>
-    I started teaching myself Web Design at the beginning of 2024.<br><br> A short time ago, relatively.<br>
-     Suddenly!   After the First Default of my New Year's Resolution.<br><br>
-     Web Design turned out to be a Million Dollar solution to, and completely outmatched, my mounting boredom.<br>I had changed all the light bulbs by then, and was being over-dosed by <strong>**MASH**</strong> re-runs!<br>
-     <br><br><strong>What a RELIEF  it became!</strong><br><br>
-    <br> That education became the Beginnings of this on your screen.</h4>
-    <h3 class="ff-sans-cond text-white  w3-center letter-spacing-3 d-block"> I Hope It's A Success<br>Thanks for putting up!</h3>
-<picture>
+    <nav> 
+     
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+       
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="beginnings.html"><span aria-hidden="true"></span>Beginnings</a>
+              <li><a class="ff-sans-cond uppercase  text-white letter-spacing-2" href="text.html"><span aria-hidden="true"></span>Skills</a>
+              <li><a class="ff-sans-cond uppercase  text-white letter-spacing-2" href="ryerson.html"><span aria-hidden="true"></span>Ryerson</a>
+               <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html"><span aria-hidden="true"></span>Home</a>
+              </ul>
+        </ul>
+       </nav>
+   </header>
+  
+  <article class="genesis-info">
+   
+    <h4 class=" ff-sans-cond  uppercase">
+    The Divine Spark of Genius began in the Embryonic Form (God was showing off, Again)<br> 
+    But this is the moment that miracle took effect and became the physical substance of Answered Prayer!<br>
+    I started teaching myself Web Design at the beginning of 2024.<br> A short time ago, relatively.<br>
+     Suddenly! after the First Default of my New Year's Resolution.
+     <br> That education became the Genesis of this on your screen.</h4><br>
+      <h3> I Hope It's A Success</h3></article>
+       
+
+
+  <picture id="genesis-image">
    <img src="young-me.png" alt="raffaele">
-</picture>
+ 
+    </picture>
+   
 </body>
 </html>

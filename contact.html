@@ -4,52 +4,146 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="icon" type="png" sizes="32x32" href="favicon-32x32.png">
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
       rel="stylesheet">
-      
-  <!-- Our custom CSS -->
+        <!-- Our custom CSS -->
+        <!DOCTYPE html>
+        <html>
+            <head>
+                <title>Raffaele Suppa</title>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="css-1.css">
+                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+               <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                   
+
   <link rel="stylesheet" href="index.css">
-  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<style>
+.primary-header {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.primary-navigation {
+    --gap: clamp(1.5rem, 5vw, 3.5rem);
+    --underline-gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: hsl( var(--clr-dark) / 0.7);
+    backdrop-filter: blur(1.5rem);
+}
+
+.primary-navigation a {
+    text-decoration: none;
+}
+
+.primary-navigation a > span {
+    font-weight: 700;
+    margin-right: .5em;
+}
+
+
+.primary-header::after {
+content: '';
+display: block;
+position: relative;
+height: 1px;
+width: 100%;
+margin-right: -2.5rem;
+background: hsl( var(--clr-dark) / .25);
+order: 1;
+}
+
+
+nav {
+order: 2;
+}
+
+.primary-navigation {
+margin-block: 2rem;
+}
+
+
+
+
+
+.underline-indicators > * {
+cursor: pointer;
+padding: var(--underline-gap, .5rem) 0;
+border: 0;
+border-bottom: .2rem solid hsl( var(--clr-dark) /.5 );
+background-color: transparent;
+}
+
+.underline-indicators > *:hover,
+.underline-indicators > *:focus {
+border-color: hsl( var(--clr-dark) /.5);
+}
+
+.underline-indicators > .active,
+.underline-indicators > [aria-selected="true"] {
+color: hsl( var(--clr-dark) / 1);
+border-color: hsl( var(--clr-dark) / 1); 
+}
+
+
+
+
+</style>
+  <title>Raffaele Suppa | Website</title>
   <script src="navigation.js" defer></script>
   <script src="tabs.js" defer></script>
 
-</head>
+
 
 <body class="crew">
   <a class="skip-to-content" href="#main">Skip to content</a>
   <header class="primary-header flex">
     <div>
-      <img src="./assets/shared/logo.svg" alt="space tourism logo" class="logo">
+      <img src="logo.svg" alt="space tourism logo" class="logo">
     </div>
     <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
-    <nav> 
-        <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
-            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html"><span aria-hidden="true">01</span>Home</a>
-              <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="bio.html"><span aria-hidden="true">02</span>Bio</a>
+    <nav>
+      <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+          <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html"><span aria-hidden="true">01</span>Home</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="genesis.html"><span aria-hidden="true">02</span>Bio</a>
             <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="architecture.html"><span aria-hidden="true">03</span>Architecture</a>
-              <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="perspective.html"><span aria-hidden="true">03</span>Fun</a>
-            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="photography.html"><span aria-hidden="true">03</span>Photos</a>
-              <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="contact.html"><span aria-hidden="true">03</span>Contact</a>
-              </ul>
-        </ul>
-    </nav>
+              <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="photography.html"><span aria-hidden="true">04</span>Photography</a>
+              <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="perspective.html"><span aria-hidden="true">05</span>Fun</a>
+                <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="contact.html"><span aria-hidden="true">06</span>Contact</a>
+      </ul>
+  </nav>
   </header>
   
   <main id="main" class="grid-container grid-container--crew flow">
-    <h1 class="numbered-title"><span aria-hidden="true">02</span> Meet your crew</h1>
-    
-    <div class="dot-indicators flex" role="tablist" aria-label="crew member list">
-      <button aria-selected="true" aria-controls="commander-tab" role="tab" data-image="commander-image" tabindex="0"><span class="sr-only">The commander</span></button>
-      <button aria-selected="false" aria-controls="mission-tab" role="tab" data-image="mission-image" tabindex="-1"><span class="sr-only">The mission specialist</span></button>
-      <button aria-selected="false" aria-controls="pilot-tab" role="tab" data-image="pilot-image" tabindex="-1"><span class="sr-only">The pilot</span></button>
-      <button aria-selected="false" aria-controls="crew-tab" role="tab" data-image="crew-image" tabindex="-1"><span class="sr-only">The crew engineer</span></button>
+   
+    <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+<div class="w3-row w3-padding-16 w3-section">
+    <div class="w3-col m4 w3-container">
+        <img src="https://www.w3schools.com/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
     </div>
-    
-    <!-- commander -->
+    <div class="w3-col m8 w3-panel">
+        <div class="w3-large w3-margin-bottom">
+            <p class="fa fa-map-marker  w3-xlarge "></i> My Address: 39 Lanark Ave, Toronto, M6C 2B5,Canada</p>
+            <br> <br>
+            <p class="fa fa-phone  w3-xlarge "></i> Phone: (437)339-5662</p>
+            <br> <br>
+            <p class="fa fa-envelope  w3-xlarge "></i> Email: supparaffaele43@gmail.com</p>
+            <br> <br>
+        </div>
+        <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+    </div>
+</div>       
+   
+    <!-- Genesis 
     <article class="crew-details flow" id="commander-tab" role="tabpanel" tabindex="0">
       <header class="flow flow--space-small">
         <h2 class="fs-600 ff-serif uppercase">Commander</h2>
@@ -60,7 +154,7 @@
       commander of Crew Dragon Demo-2.</p>
     </article> 
     
-    <!-- mission specialist -->
+    mission specialist
     <article hidden class="crew-details flow" id="mission-tab" role="tabpanel" tabindex="0">
       <header class="flow flow--space-small">
         <h2 class="fs-600 ff-serif uppercase">Mission Specialist</h2>
@@ -71,7 +165,7 @@
         African to travel to space as a space tourist.</p>
     </article> 
     
-    <!-- pilot -->
+     pilot 
     <article hidden class="crew-details flow" id="pilot-tab" role="tabpanel" tabindex="0">
       <header class="flow flow--space-small">
         <h2 class="fs-600 ff-serif uppercase">Pilot</h2>
@@ -83,7 +177,7 @@
         station systems flight engineer.</p>
     </article> 
     
-    <!-- engineer -->
+   engineer 
     <article hidden class="crew-details flow" id="crew-tab" role="tabpanel" tabindex="0">
       <header class="flow flow--space-small">
         <h2 class="fs-600 ff-serif uppercase">Flight Engineer</h2>
@@ -110,7 +204,7 @@
     <picture hidden id="crew-image">
       <source srcset="assets/crew/image-anousheh-ansari.webp" type="image/webp">
       <img src="assets/crew/image-anousheh-ansari.png" alt="Douglas Hurley">
-    </picture>
+    </picture>-->
   </main>
 </body>
 </html>

@@ -1,0 +1,178 @@
+<body><!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="icon" type="png" sizes="32x32" href="favicon-32x32.png">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+        rel="stylesheet">
+        
+    <!-- Our custom CSS -->
+    <link rel="stylesheet" href="index.css">
+    <title>Raffaele Suppa | Website</title>
+    <script src="navigation.js" defer></script>
+
+  <!--  <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      /*body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }*/
+      
+      /* The grid: Three equal columns that floats next to each other */
+      .column {
+        float: left;
+        /*width: 33.33%;*/
+        width: 70%;
+        padding: 20px;
+        text-align: center;
+        font-size: 25px;
+        cursor: pointer;
+ 
+}
+       
+ .t-center{
+  text-align: center;
+  margin-right: 550px;
+ }
+      
+      .containerTab {
+        padding: 20px;
+        color: white;
+       }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+
+}
+     
+      
+      /* Closable button inside the container tab */
+      .closebtn {
+        float: right;
+        color: white;
+        font-size: 35px;
+        cursor: pointer;
+      }
+      </style>-->
+
+
+
+      <div>
+        <input type="radio" id="skills_id" type="radio" onclick="skills_id()">  <label><p class=" uppercase  fs-200"><p>Skills</p></label></button>
+        <input type="radio" id="beginnings_id" type="radio" onclick="beginnings_id()">  <label><p class=" uppercase  fs-200"><p>Beginnings</p></label></button>
+        <input type="radio" id="beginnings_id" type="radio" onclick="beginnings_id()">  <label><p class=" uppercase  fs-200"><p>Beginnings</p></label></button>
+     </div>
+  <script type="text/javascript">
+    function beginnings_id(){
+      window.location.href="./beginnings.html";
+  }
+  
+  function skills_id(){
+      window.location.href="./skills.html";
+  }
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+  <body class="home-1">
+    <a class="skip-to-content" href="#main">Skip to content</a>
+    <header class="primary-header flex">
+      <div>
+        <img src="logo.svg" alt="space tourism logo" class="logo">
+      </div>
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation-1"><span class="sr-only" aria-expanded="false">Menu</span></button>
+      <nav>
+          <ul id="primary-navigation-1" data-visible="false" class="primary-navigation-1 underline-indicators-1 flex">
+              <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html"><span aria-hidden="true">01</span>Home</a>
+                <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="genesis.html"><span aria-hidden="true">02</span>Bio</a>
+                <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="architecture.html"><span aria-hidden="true">03</span>Architecture</a>
+                  <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="photography.html"><span aria-hidden="true">04</span>Photography</a>
+                  <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="perspective.html"><span aria-hidden="true">05</span>Fun</a>
+                   <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="contact.html"><span aria-hidden="true">06</span>Contact</a>
+          </ul>
+      </nav>
+    </header>
+ 
+
+
+   <!-- <div class="t-center">
+      <h2>Click any Section:  Skills</h2>
+      
+    </div>
+
+ <article class="home-1-info" >
+
+ 
+
+ Three columns
+<div class="row">
+
+  <div class="column" onclick="openTab('b1');" style= "background:rgb(166, 170, 166);"> 
+  
+
+ 
+   What I Do
+  </div>
+  <div class="column" onclick="openTab('b2');" style="background:rgb(166, 170, 166);">
+    My Prices
+  </div>
+  <div class="column" onclick="openTab('b3');" style="background:rgb(166, 170, 166);">
+   Testimonials
+  </div>
+</div>
+
+Full-width columns: (hidden by default) 
+<div id="b1" class="containerTab" style="display:none;background:rgb(166, 170, 166);">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Box 1</h2>
+  <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+</div>
+
+<div id="b2" class="containerTab" style="display:none;background:rgb(166, 170, 166);">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Box 2</h2>
+  <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+</div>
+
+<div id="b3" class="containerTab" style="display:none;background:rgb(166, 170, 166);">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Box 3</h2>
+  <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+</div>
+ </article>
+<script>
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>-->
+
+</body>
+</html> 

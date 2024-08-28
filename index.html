@@ -13,42 +13,40 @@
       
   <!-- Our custom CSS -->
   <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="css.css">
-  <title>Raffaele Suppa's Website</title>
+  <title>Frontend Mentor | Space tourism website</title>
   <script src="navigation.js" defer></script>
 </head>
 <body class="home">
- 
-
-  <header class="primary-header flex ">
-   
-      <img src="logo.svg" alt="space tourism logo" class="logo">
-
+  <a class="skip-to-content" href="#main">Skip to content</a>
+  <header class="primary-header flex">
+    <div>
+      <img src="./assets/shared/logo.svg" alt="space tourism logo" class="logo">
+    </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
     <nav>
         <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
             <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html"><span aria-hidden="true">00</span>Home</a>
-            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="bio.html"><span aria-hidden="true">01</span>Bio</a>
-            <li><a class="ff-sans-cond uppercase text-white  letter-spacing-2" href="architecture.html"><span aria-hidden="true">02</span>Architecture</a>
-              <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="perspective.html"><span aria-hidden="true">03</span>Fun</a>
-            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="photography.html"><span aria-hidden="true">04</span>Photography</a>
-              <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="contact.html"><span aria-hidden="true">05</span>Contact</a>
-              </ul>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="destination.html"><span aria-hidden="true">01</span>Destination</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="crew.html"><span aria-hidden="true">02</span>Crew</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="technology.html"><span aria-hidden="true">03</span>Technology</a>
         </ul>
     </nav>
   </header>
   
-  
- 
- 
-      <h1 class="letter-spacing-3  w3-center fs-500 ff-serif text-white">So, I'm going to tell you about</h1>
-      <h2 class="fs-800 ff-serif text-accent w3-center letter-spacing-3">Myself</h2>
- 
-      <p class="letter-spacing-2 w3-center fs-500 ff-serif text-white">Let’s face it------if you want to get to know someone you may as well genuinely go to 
-      the source and not hover kind of on the edge. Well sit back, relax, 
-      because I'll give you a glimpse!  I will leave things out.  I, however, if you're interested, encourage you to ask Alexa!  Thanks.</p>
-   
-   
-  <a href="perspective.html" class="large-button uppercase fs-serif text-blue fs-600 ">A Distraction -- Click</a>
-    
+  <main id="main" class="grid-container grid-container--home">
+    <div>
+      <h1 class="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">So, you want to travel to
+      <span class="d-block fs-900 ff-serif text-white">Space</span></h1>
+      
+      <p>Let’s face it; if you want to go to space, you might as well genuinely go to 
+      outer space and not hover kind of on the edge of it. Well sit back, and relax 
+      because we’ll give you a truly out of this world experience! </p>
+    </div>
+    <div>
+      <a href="destination.html" class="large-button uppercase ff-serif text-dark bg-white">Explore</a>
+    </div>
+  </main>
+
+
 </body>
 </html>
