@@ -88,7 +88,7 @@ body {
     font-size: var(--fs-400);
     color: hsl( var(--clr-white) );
     background-color: hsl( var(--clr-dark) );
-    line-height: 1.1;
+    line-height: 1.5;
     min-height: 100vh;
     
     display: grid;
@@ -99,8 +99,8 @@ body {
 
 /* make images easier to work with */
 img,
-picture {
-    max-width: 80%;
+picutre {
+    max-width: 100%;
     display: block;
 }
 
@@ -154,7 +154,7 @@ select {
 }
 
 .container {
-    padding-inline: 0em;
+    padding-inline: 2em;
     margin-inline: auto;
     max-width: 80rem;
 }
@@ -220,9 +220,7 @@ select {
 .fs-900,
 .fs-800,
 .fs-700,
-.fs-600,
-.fs-400
- {
+.fs-600 {
     line-height: 1.1;
 }
 
@@ -260,8 +258,8 @@ select {
     content: '';
     position: absolute;
     z-index: -1;
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     background: hsl( var(--clr-white) / .1);
     border-radius: 50%;
     opacity: 0;
@@ -509,7 +507,7 @@ body {
 }
 
 .grid-container p:not([class]) {
-    max-width: 50ch;
+    max-width: 70ch;
 }
 
 .numbered-title {
@@ -551,15 +549,47 @@ body {
 .destination-meta p {
     font-size: 1.75rem;
 }
+/* genesis layout */
+.grid-container--genesis {
+    --flow-space: 2rem;
+    grid-template-areas: 
+        'header header header header'
+        'sidebar content content image'
+       'sidebar content content image'
+        ;
+}
+.grid-container--genesis > picture {
+    grid-area: image;
+    max-width: 93%;
+    align-self: end;
+}
+
+.grid-container--genesis > .genesis-info {
+    grid-area: content;
+    align-self: start;
+}
+
+.grid-container--genesis > .sidebar {
+    grid-area: sidebar;
+    align-self: start;
+}
+
+
+
+
+
+
+
 
 /* crew layout */
 
 .grid-container--crew {
-  --flow-space: 2rem;
+    --flow-space: 2rem;
     grid-template-areas: 
         'title'
-         'tabs'
-        'content image';
+        'image'
+        'tabs'
+        'content';
 }
 
 .grid-container--crew > picture {
@@ -592,7 +622,7 @@ body {
     }
     
     .grid-container--crew {
-        padding-bottom: 50px;
+        padding-bottom: 0;
         grid-template-areas: 
             'title'
             'content'
@@ -646,17 +676,14 @@ body {
         justify-items: start;
         grid-template-areas: 
             '. title title .'
-           '.  tabs tabs.'
             '. content image .'
-            '. content image .'
-            ;
+            '. tabs image .';
     }
     
     .grid-container--crew > picture {
         grid-column: span 2;
         align-self: end; 
-        max-width: 60%;
-        margin-top: 50px;
+        max-width: 90%;
     }
 
 }
