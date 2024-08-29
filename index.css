@@ -84,22 +84,26 @@ p {
 
 /* set up the body */
 body {
-    font-family: var(--ff-sans-normal);
+   /* position:fixed;*/
+    background-image: url(SL.123119.26540.04.jpg);
+    /*font-family: var(--ff-sans-normal);
     font-size: var(--fs-400);
-    color: hsl( var(--clr-white) );
+    color: hsl( var(--clr-white) );*/
     background-color: hsl( var(--clr-dark) );
     line-height: 1.5;
     min-height: 100vh;
     
     display: grid;
-    grid-template-rows: min-content 1fr;
-    
-    overflow-x: hidden;
+    grid-template-columns: 160px 2fr;
+  grid-template-rows: 150px 2fr;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
-/* make images easier to work with */
+
+ make images easier to work with */
 img,
-picutre {
+picture {
     max-width: 100%;
     display: block;
 }
@@ -131,18 +135,20 @@ select {
 
 /* general */
 
+    
 .flex {
     display: flex;
-    gap: var(--gap, 1rem);
+    height: 100px;
+ gap: var(--gap, .25rem);
 }
 
 .grid {
     display: grid;
-    gap: var(--gap, 1rem);
+   /* gap: var(--gap, 1rem);*/
 }
 
 .d-block {
-    display: block;
+    display:block;
 }
 
 .flow > *:where(:not(:first-child)) {
@@ -153,11 +159,14 @@ select {
     --flow-space: .75rem;
 }
 
-.container {
+.container{
     padding-inline: 2em;
     margin-inline: auto;
-    max-width: 80rem;
+    max-width: 100%;
 }
+
+
+
 
 .sr-only {
   position: absolute; 
@@ -242,11 +251,19 @@ select {
 /* Compontents         */
 /* ------------------- */
 
-.large-button {
+
+.large-button{
+  
+
+
+ background-color: hsl( var(--clr-dark) / .8);
+  position:relative;
+    display:inline-grid;
+
     font-size: 2rem;
-    position: relative;
+
     z-index: 1;
-    display: inline-grid;
+
     place-items: center;
     padding: 0 2em;
     border-radius: 50%;
@@ -258,8 +275,8 @@ select {
     content: '';
     position: absolute;
     z-index: -1;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     background: hsl( var(--clr-white) / .1);
     border-radius: 50%;
     opacity: 0;
@@ -275,12 +292,14 @@ select {
 /* primary-header */
 
 .logo {
-    margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
-}
+   margin: clamp(1.5rem, 5vw, 3.5rem);
+} 
 
 .primary-header {
+    
+   
+    align-self: center;
     justify-content: space-between;
-    align-items: center;
 }
 
 .primary-navigation {
@@ -335,7 +354,7 @@ select {
         right: 1rem;
         top: 2rem;
         background: transparent;
-        background-image: url(./assets/shared/icon-hamburger.svg);
+        background-image: url(icon-hamburger.svg);
         background-repeat: no-repeat;
         background-position: center;
         width: 1.5rem;
@@ -344,7 +363,7 @@ select {
     }
     
     .mobile-nav-toggle[aria-expanded="true"] {
-        background-image: url(./assets/shared/icon-close.svg);
+        background-image: url(icon-close.svg);
     }
     
     .mobile-nav-toggle:focus-visible {
@@ -378,6 +397,7 @@ select {
          background: hsl( var(--clr-white) / .25);
          order: 1;
      }
+    
      
     nav {
         order: 2;
@@ -388,8 +408,6 @@ select {
     }
     
    
-}
-
 
 .underline-indicators > * {
     cursor: pointer;
@@ -420,6 +438,7 @@ select {
     border-radius: 50%;
     padding: .5em;
     background-color: hsl( var(--clr-white) / .25);
+    aspect-ratio: 1;
 }
  
 .dot-indicators > *:hover,
@@ -436,60 +455,81 @@ select {
 /* Page specific background      */
 /* ----------------------------- */
 body {
+    
     background-size: cover;
     background-position: bottom center;
+
 }
 /* home */
 .home {
-    background-image: url(./assets/home/background-home-mobile.jpg);
+    background-image: url(background-home-mobile.jpg);
 }
 
 @media (min-width: 35rem) {
     .home {
         background-position: center center;
-        background-image: url(./assets/home/background-home-tablet.jpg);
+        background-image: url(background-home-tablet.jpg);
     }
 }
 
 @media (min-width: 45rem) {
     .home {
-        background-image: url(./assets/home/background-home-desktop.jpg);
+        background-image: url(background-home-desktop.jpg);
     }
 } 
 
 /* destination */
 .destination {
-    background-image: url(./assets/destination/background-destination-mobile.jpg);
+    background-image: url(background-destination-mobile.jpg);
 }
 
 @media (min-width: 35rem) {
     .destination {
         background-position: center center;
-        background-image: url(./assets/destination/background-destination-tablet.jpg);
+        background-image: url(background-destination-tablet.jpg);
     }
 }
 
 @media (min-width: 45rem) {
     .destination {
-        background-image: url(./assets/destination/background-destination-desktop.jpg);
+        background-image: url(background-destination-desktop.jpg);
     }
 } 
 
 /* crew */
 .crew {
-    background-image: url(./assets/home/background-crew-mobile.jpg);
+    background-image: url(background-crew-mobile.jpg);
 }
 
 @media (min-width: 35rem) {
     .crew {
         background-position: center center;
-        background-image: url(./assets/crew/background-crew-tablet.jpg);
+        background-image: url(background-crew-tablet.jpg);
     }
 }
 
 @media (min-width: 45rem) {
     .crew {
-        background-image: url(./assets/crew/background-crew-desktop.jpg);
+        background-image: url(background-crew-desktop.jpg);
+    }
+} 
+
+
+/* perspective */
+.perspective {
+    background-image: url(background-crew-mobile.jpg);
+}
+
+@media (min-width: 35rem) {
+    .perspective {
+        background-position: center center;
+        background-image: url(background-crew-tablet.jpg);
+    }
+}
+
+@media (min-width: 45rem) {
+    .perspective {
+        background-image: url(background-crew-desktop.jpg);
     }
 } 
 
@@ -497,17 +537,45 @@ body {
 /* Layout                        */
 /* ----------------------------- */
 
+@media (min-width: 45em) {
+    .grid-container--perspective {
+        display: grid;
+       /* place-items: center;
+        text-align:center;
+        column-gap: var(--container-gap, 2rem);*/
+      
+        --flow-space: 2rem;
+        grid-template-areas: 
+            'header header'
+          'sidebar main'
+          'sidebar main';
+    }
+    
 
-.grid-container {
+
+    .grid-container--perspective > .primary-header {
+      grid-area: header;
+        align-items: end;
+    }
+    .grid-container--perspective > .sidebar {
+        grid-area: sidebar;
+        
+      }
+      .grid-container--perspective > .canvas {
+        grid-area: main;
+          align-items:start;
+      }
+
+/*.grid-container {
     text-align: center;
     display: grid;
     place-items: center;
-    padding-inline: 1rem;
+    /*padding-inline: 1rem;
     padding-bottom: 4rem;
-}
+}*/
 
 .grid-container p:not([class]) {
-    max-width: 70ch;
+    max-width: 50ch;
 }
 
 .numbered-title {
@@ -549,37 +617,6 @@ body {
 .destination-meta p {
     font-size: 1.75rem;
 }
-/* genesis layout */
-.grid-container--genesis {
-    --flow-space: 2rem;
-    grid-template-areas: 
-        'header header header header'
-        'sidebar content content image'
-       'sidebar content content image'
-        ;
-}
-.grid-container--genesis > picture {
-    grid-area: image;
-    max-width: 93%;
-    align-self: end;
-}
-
-.grid-container--genesis > .genesis-info {
-    grid-area: content;
-    align-self: start;
-}
-
-.grid-container--genesis > .sidebar {
-    grid-area: sidebar;
-    align-self: start;
-}
-
-
-
-
-
-
-
 
 /* crew layout */
 
@@ -587,9 +624,9 @@ body {
     --flow-space: 2rem;
     grid-template-areas: 
         'title'
-        'image'
+      
         'tabs'
-        'content';
+        'content image';
 }
 
 .grid-container--crew > picture {
@@ -622,7 +659,7 @@ body {
     }
     
     .grid-container--crew {
-        padding-bottom: 0;
+        padding-bottom: 50px;
         grid-template-areas: 
             'title'
             'content'
@@ -676,14 +713,16 @@ body {
         justify-items: start;
         grid-template-areas: 
             '. title title .'
+            '.tabs tabs.'
             '. content image .'
-            '. tabs image .';
+            '. content image .';
     }
     
     .grid-container--crew > picture {
         grid-column: span 2;
         align-self: end; 
         max-width: 90%;
+        margin-top: 50px;
     }
 
-}
+}}}
