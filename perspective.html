@@ -15,48 +15,54 @@
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="css.css">
   <link rel="stylesheet" href="perspective.css">
-  <style>
-    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-    .w3-row-padding img {margin-bottom: 0px}
-    /* Set the width of the sidebar to 120px */
-    .w3-sidebar {width: 160px;background: #222;}
-    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-    #main {margin-left: 160px}
-    /* Remove margins from "page content" on small screens */
-    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
-    </style>
   <title>Raffaele Suppa | Website</title>
   <script src="navigation.js" defer></script>
   <script src="perspective.js" defer></script>
 </head>
+  <style>
+    /*body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}*/
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 120px;background: #222;}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 120px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    </style>
+
+  
+  <body class="perspective">
+	
+	  <a class="skip-to-content" href="#main">Skip to content</a>
+
 
  
  <!-- Icon Bar (Sidebar - hidden on small screens) -->
- <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+ <nav class="w3-sidebar w3-bar-block w3-small w3-black w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
   <img src="revit.jpg" style="width:100%">
- <a href="genesis.html" class="w3-bar-item w3-button w3-black w3-padding-35 w3-hover-white">
+ <a href="genesis.html" class="w3-bar-item w3-button w3-black w3-padding-large w3-hover-white">
     <i class="fa fa-pencil w3-xxlarge"></i>
     <p>Genesis</p>
   </a>
-  <a href="beginnings.html" class="w3-bar-item w3-button w3-black w3-padding-35 w3-hover-white">
+  <a href="beginnings.html" class="w3-bar-item w3-button w3-black w3-padding-large w3-hover-white">
     <i class="fa fa-eye w3-xxlarge"></i>
     <p>Beginnings</p>
   </a>
-  <a href="ryerson.html" class="w3-bar-item w3-button w3-black w3-padding-35 w3-hover-white">
+  <a href="ryerson.html" class="w3-bar-item w3-button w3-black w3-padding-large w3-hover-white">
     <i class="fa fa-university w3-xxlarge"></i>
     <p>Ryerson</p>
   </a>
-    <a href="perspective.html" class="w3-bar-item w3-button w3-black w3-padding-35 w3-hover-white">
+    <a href="perspective.html" class="w3-bar-item w3-button w3-black w3-padding-large w3-hover-white">
       <i class="fa fa-camera w3-xxlarge"></i>
       <p>Fun</p>
     </a>
-    <a href="contact.html" class="w3-bar-item w3-button w3-black w3-padding-35 w3-hover-white">
+    <a href="contact.html" class="w3-bar-item w3-button w3-black w3-padding-large w3-hover-white">
       <i class="fa fa-phone w3-xxlarge"></i>
       <p>Contact</p>
     </a>
  
-    <a href="index.html" class="w3-bar-item w3-button w3-black w3-padding-35 w3-hover-white">
+    <a href="index.html" class="w3-bar-item w3-button w3-black w3-padding-large w3-hover-white">
       <i class="fa fa-home w3-xxlarge"></i>
       <p>Home</p>
     </a>
@@ -73,10 +79,6 @@
 </div>
 
 
-
-
-<main id="main" class="grid-container--perspective">
-  <a class="skip-to-content" href="#main">Skip to content</a>
   <header class="primary-header flex">
     <div>
       <img src="logo.svg" alt="logo" class="logo">
@@ -96,7 +98,7 @@
     </nav>
   </header>
 
-
+<main id="main" class="perspective">
 
 
 				<canvas id="canvas"></canvas>
@@ -108,8 +110,7 @@
 					<input id="btnToggleView" class="icon" type="checkbox" name="toggleView" onclick="toggleView()">
 					<input id="btnToggleResolution" class="icon" type="checkbox" name="toggleResolution" onchange="toggleResolution()">
 					<input id="btnReset" class="icon" type="checkbox" name="reset" onclick="reset()">
-				  </div>
-				</div></main>
+				  </div></div></main>
 </body></html>
 			
 				<script type="x-shader/x-fragment">#version 300 es
