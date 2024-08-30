@@ -5,8 +5,7 @@
 }
 
 .bg-image {
-  background: url("https://assets.codepen.io/907471/DALL%C2%B7E+2024-07-25+12.21.18+-+A+vibrant+background+perfect+for+a+glassmorphic+user+interface+in+a+landscape+format.+The+design+features+a+gradient+of+gold%2C+brown%2C+black%2C+and+white%2C.webp")\par
-    center center no-repeat;
+  background: --clr-light;
   background-position: cover;
   position: relative;
   inset: -20vmin;
