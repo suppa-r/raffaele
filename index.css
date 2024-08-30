@@ -530,6 +530,16 @@ body {
     }
 } 
 
+/* profile */
+grid-container-cube{
+    background-image: url(background-home-desktop.jpg) ;
+}
+
+
+
+
+
+
 /* genesis */
 body.genesis{
  
@@ -756,10 +766,6 @@ body.genesis {
         grid-column: span 2;
         align-self: end; 
         max-width: 90%;
-    }
-
-    grid-container-cube{
-        background-image: url(.123119.26540.04.jpg) ;
     }
 
 }
