@@ -100,7 +100,7 @@ body {
 /* make images easier to work with */
 img,
 picture {
-    max-width: 100%;
+    max-width: 80%;
     display: block;
 }
 
@@ -495,21 +495,20 @@ body {
 
 /* cube */
 .grid-container--cube {
-    background-image: url(wall-1846965_1280.jpg);
+    background-image: url(background-crew-mobile.jpg);
 }
 
 @media (min-width: 35rem) {
     .grid-container--cube {
         background-position: center center;
-        background-image: url(wall-1846965_1280.jpg);
+        background-image: url(background-crew-tablet.jpg);
     }
 }
 
 @media (min-width: 45rem) {
     .grid-container--cube {
-        background-image: url(wall-1846965_1280.jpg);
-        position: no-repeat;
-    }
+        background-image: url(background-crew-desktop.jpg);
+      }
 } 
 
 /* perspective */
@@ -526,14 +525,65 @@ body {
 
 @media (min-width: 45rem) {
     .grid-container--perspective {
-        background-image: url(background-technology-desktop.jpg);
+        background-image: url(background-home-desktop.jpg);
        
     }
 } 
 
+/* genesis */
+body.genesis{
+ 
+    grid-template-columns:200px 1fr 1fr;
+    grid-template-rows: 150px auto;
+    grid-template-areas: 
+        'sidebar header header'
+        'sidebar content image'
+       'sidebar content-1 image'
+          
+         ;
+}
+
+body.genesis > .header{
+    grid-area: header;
+}
+
+body.genesis > .genesis-info{
+    grid-area: content;
+    margin-left: 150px;
+}
+body.genesis > .genesis-info-1{
+    grid-area: content-1;
+    margin-left: 150px;
+}
+
+body.genesis > .picture{
+    grid-area: image;
+   
+    
+}
+
+
+body.genesis {
+    background-image: url(background-home-mobile.jpg);
+}
+
+@media (min-width: 35rem) {
+    body.genesis {
+        background-position: center center;
+        background-image: url(background-home-tablet.jpg);
+    }
+}
+
+@media (min-width: 45rem) {
+    body.genesis {
+        background-image: url(background-home-desktop.jpg);
+       
+    }
+} 
 /* ----------------------------- */
 /* Layout                        */
 /* ----------------------------- */
+
 .grid-container--perspective {
     --flow-space: 2rem;
     grid-template-areas: 
