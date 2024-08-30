@@ -512,11 +512,45 @@ body {
     }
 } 
 
+/* perspective */
+.grid-container--perspective {
+    background-image: url(background-home-mobile.jpg);
+}
+
+@media (min-width: 35rem) {
+    .grid-container--perspective {
+        background-position: center center;
+        background-image: url(background-home-tablet.jpg);
+    }
+}
+
+@media (min-width: 45rem) {
+    .grid-container--perspective {
+        background-image: url(background-technology-desktop.jpg);
+       
+    }
+} 
+
 /* ----------------------------- */
 /* Layout                        */
 /* ----------------------------- */
+.grid-container--perspective {
+    --flow-space: 2rem;
+    grid-template-areas: 
+        'header header'
+        'sidebar canvas'
+       ;
+}
+.grid-container--perspective > .header{
+    grid-area: header;
+}
+.grid-container--perspective > .sidebar{
+    grid-area: sidebar;
+}
 
-
+.grid-container--perspective > .canvas{
+    grid-area: canvas;
+}
 .grid-container {
     text-align: center;
     display: grid;
