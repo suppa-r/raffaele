@@ -260,7 +260,7 @@ select {
     z-index: -1;
     width: 100%;
     height: 100%;
-    background: hsl( var(--clr-white) / .1);
+    background: hsl( var(--clr-white) / .4);
     border-radius: 50%;
     opacity: 0;
     transition: opacity 500ms linear, transform 750ms ease-in-out;
