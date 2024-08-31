@@ -23,8 +23,16 @@
   h1 {
     text-align: center; /* Align text in the center */
     position: absolute; /* Position the element */
-    top: 50%; /* Move the element down by 50% of the viewport height */
-    left: 50%; /* Move the element horizontally by 50% of the viewport width */
+    top: 67%; /* Move the element down by 50% of the viewport height */
+    left: 29%; /* Move the element horizontally by 50% of the viewport width */
+    transform: translate(-50%, -50%); /* Center the element precisely */
+  }
+
+   h2 {
+    text-align: center; /* Align text in the center */
+    position: absolute; /* Position the element */
+    top: 67%; /* Move the element down by 50% of the viewport height */
+    left: 73%; /* Move the element horizontally by 50% of the viewport width */
     transform: translate(-50%, -50%); /* Center the element precisely */
   }
     /*body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}*/
@@ -38,7 +46,7 @@
     </style>
 
   
-  <body class="profile">
+  <body class="revit">
 	
 	  <a class="skip-to-content" href="#main">Skip to content</a>
 
@@ -68,12 +76,10 @@
       <i class="fa fa-phone w3-xxlarge"></i>
       <p>Contact</p>
     </a>
-
-    <a href="revit.html" class="w3-bar-item w3-button w3-black w3-padding-large w3-hover-white">
+    <a href="profile.html" class="w3-bar-item w3-button w3-black w3-padding-large w3-hover-white">
       <i class="fa fa-pencil w3-xxlarge"></i>
-      <p>Revit</p>
+      <p>Profile</p>
     </a>
- 
     <a href="index.html" class="w3-bar-item w3-button w3-black w3-padding-large w3-hover-white">
       <i class="fa fa-home w3-xxlarge"></i>
       <p>Home</p>
@@ -99,11 +105,10 @@
     <nav>
         <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
           
-         
-       
+          <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="profile.html"><span aria-hidden="true">01</span>Profile</a>
+            <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="skills.html"><span aria-hidden="true">01</span>Skills</a>
               <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="perspective.html"><span aria-hidden="true">01</span>Fun</a>
-             
-                <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="revit.html"><span aria-hidden="true">01</span>Revit</a>
+			
                 <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="architecture.html"><span aria-hidden="true">02</span>Architecture</a>
                   <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="photography.html"><span aria-hidden="true">03</span>Photos</a>
                     <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="contact.html"><span aria-hidden="true">04</span>Contact</a>
@@ -111,65 +116,15 @@
         </ul>
     </nav>
   </header>
+  <main id="main" class="revit">
+    <div class ="parent flex" style="column-gap: 200px;">
+        <div class ="d-block" style="margin-left:200px;">
+            <img width="600" height="400" src="Complex Tower-A.jpg">
+            <h1 class="ff-serif fs-600 text-accent">My Imagination gone Wild</h1>
+        </div>
 
- 
-  <main id="main" class="profile">
-   
-    <h1 class="d-block fs-500 ff-serif text-accent">Browse .. Please</h1>
- 
- 
-  <div class="bg-image"></div>
- 
-  <div class="cube">
-      <div class="face front">
-          <div class="bg"></div>
-          <div class="bg second"></div>
-          <div class="content">
-          </div>
-      </div>
-      <div class="face bottom">
-          <div class="bg"></div>
-          <div class="bg second"></div>
-          <div class="content">
-          </div>
-      </div>
-      <div class="face top">
-          <div class="bg"></div>
-          <div class="bg second"></div>
-          <div class="content">
-  
-  
-          </div>
-      </div>
-      <div class="face back">
-          <div class="bg"></div>
-          <div class="bg second"></div>
-          <div class="content">
-  
-  
-          </div>
-      </div>
-      <div class="face left">
-          <div class="bg"></div>
-          <div class="bg second"></div>
-          <div class="content">
-  
-  
-          </div>
-      </div>
-  
-      <div class="face right">
-          <div class="bg"></div>
-          <div class="bg second"></div>
-          <div class="content">
-  
-  
-          </div>
-      </div>
-  </div></main>
-  
-  
-
-
-
-</body></html>
+        <div class ="d-block">
+         <img width="600" height="400" src="ComplexTower-C.jpg">
+            <h2 class="ff-serif fs-600 text-accent">Gone Wild -- Again</h2>
+        </div>
+    </div>

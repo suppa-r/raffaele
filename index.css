@@ -81,7 +81,11 @@ h6,
 p {
     font-weight: 400;
 }
-
+h2{
+    display:block;
+    text-align:center;
+    justify-content: center;
+}
 /* set up the body */
 body {
     font-family: var(--ff-sans-normal);
@@ -275,7 +279,7 @@ select {
 /* primary-header */
 
 .logo {
-    margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
+    margin: 1.9rem clamp(1.5rem, 12vw, 5rem);
 }
 
 .primary-header {
@@ -499,18 +503,15 @@ body {
   
     body.profile {
         display: grid;
-        grid-template-columns: 160px 1fr 1fr;
-        grid-template-rows: 150px 2fr 1fr;
-        place-items: center;
-        overflow: hidden;
-        height: 100vh;
-        width: 100vw;
-        perspective: 37rem;
-        background-color: black;
-        grid-template-areas:
+        grid-template-columns:120px 1fr 1fr ;
+    grid-template-rows: 150px 1fr auto;
+    overflow-y: hidden;
+    grid-template-areas: 
         'header header header'
-        'sidebar cube notes'
-        'sidebar cube notes' ;
+        'sidebar cube cube'
+'sidebar cube cube'
+          
+         ;
       }
       
    
@@ -521,13 +522,9 @@ body.profile > .header{
 body.profile > .sidebar{
     grid-area: sidebar;
 }
-body.profile > .bg-image{
+body.profile > .cube{
     grid-area: cube;
 }
-body.profile > .notes{
-    grid-area:notes
-}
-
 
 
 
@@ -538,10 +535,10 @@ body.profile > .notes{
 /* genesis */
 body.genesis{
  
-    grid-template-columns:200px 1fr 1fr;
-    grid-template-rows: 150px auto;
+    grid-template-columns:120px 1fr 1fr;
+    grid-template-rows: 150px 1fr 1fr;
     grid-template-areas: 
-        'sidebar header header'
+        'header header header'
         'sidebar content image'
        'sidebar content-1 image'
           
@@ -563,6 +560,7 @@ body.genesis > .genesis-info-1{
 
 body.genesis > .picture{
     grid-area: image;
+    margin-top: 100px;
    
     
 }

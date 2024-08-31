@@ -129,7 +129,7 @@
 }
 
 body.magic {
-  display: grid;
+  display: flex;
   place-items: center;
   overflow: hidden;
   height: 100vh;
@@ -139,6 +139,12 @@ body.magic {
 }
 
 
+.cube {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust the height as needed */
+}
 
 
  
