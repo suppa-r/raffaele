@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,37 +10,50 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
       rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+      
+  <!-- Our custom CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
   <!-- Our custom CSS -->
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="css.css">
   <link rel="stylesheet" href="cube.css">
   <title>Raffaele Suppa | Website</title>
   <script src="navigation.js" defer></script>
-  <script src="perspective.js" defer></script>
 </head>
-  <style>
-  h1 {
-    text-align: center; /* Align text in the center */
-    position: absolute; /* Position the element */
-    top: 50%; /* Move the element down by 50% of the viewport height */
-    left: 50%; /* Move the element horizontally by 50% of the viewport width */
-    transform: translate(-50%, -50%); /* Center the element precisely */
-  }
-    /*body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}*/
-    .w3-row-padding img {margin-bottom: 12px}
-    /* Set the width of the sidebar to 120px */
-    .w3-sidebar {width: 120px;background: #222;}
-    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-    #main {margin-left: 120px}
-    /* Remove margins from "page content" on small screens */
-    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
-    </style>
+<style>
+.w3-row-padding img {margin-bottom: 16px}
+ /* Set the width of the sidebar to 120px */
+ .w3-sidebar {width: 120px;background: #0e0d0d;}
+ /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+ #main {margin-left: 120px}
+ /* Remove margins from "page content" on small screens */
+ @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+ </style>
+<body class="profile">
+  <a class="skip-to-content" href="#main">Skip to content</a>
+  <header class="primary-header flex">
+    <div>
+      <img src="logo.svg" alt="logo" class="logo">
+    </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+    <nav>
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+          
+          <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="skills.html"><span aria-hidden="true">01</span>Skills</a>
+            <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="revit.html"><span aria-hidden="true">02</span>Revit</a>
+              <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="perspective.html"><span aria-hidden="true">03</span>Fun</a>
+                <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="architecture.html"><span aria-hidden="true">04</span>Architecture</a>
+                  <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="photography.html"><span aria-hidden="true">05</span>Photos</a>
+                    <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="contact.html"><span aria-hidden="true">06</span>Contact</a>
+                      <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="index.html"><span aria-hidden="true">07</span>Home</a>
+        </ul>
+    </nav>
+  </header>
 
   
-  <body class="profile">
-	
-	  <a class="skip-to-content" href="#main">Skip to content</a>
+ 
+ 
+
 
    
  
@@ -91,29 +104,10 @@
 </div>
 
 
-<header class="primary-header flex"style="margin-left:100px;">
-    <div>
-      <img src="logo.svg" alt="logo" class="logo">
-    </div>
-    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
-    <nav>
-        <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
-          
-         
-       
-              <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="perspective.html"><span aria-hidden="true">01</span>Fun</a>
-             
-                <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="revit.html"><span aria-hidden="true">01</span>Revit</a>
-                <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="architecture.html"><span aria-hidden="true">02</span>Architecture</a>
-                  <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="photography.html"><span aria-hidden="true">03</span>Photos</a>
-                    <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="contact.html"><span aria-hidden="true">04</span>Contact</a>
-                        <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="index.html"><span aria-hidden="true">05</span>Home</a>
-        </ul>
-    </nav>
-  </header>
+<main id="main" class="grid-container grid-container--profile">
 
  
-  <main id="main" class="profile">
+
    
     <h1 class="d-block fs-500 ff-serif text-accent">Browse .. Please</h1>
  
@@ -164,9 +158,7 @@
           <div class="content">
   
   
-          </div>
-      </div>
-  </div></main>
+          </div></div></div></main>
   
   
 
