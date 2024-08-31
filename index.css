@@ -414,6 +414,29 @@ select {
     border-color: hsl( var(--clr-white) / 1); 
 }
 
+.underline-indicators-1 > * {
+    cursor: pointer;
+    padding: var(--underline-gap, .5rem) 0;
+    border: 0;
+    border-bottom: .2rem solid hsl( var(--clr-dark) / 0 );
+    background-color: transparent;
+}
+
+.underline-indicators-1 > *:hover,
+.underline-indicators-1 > *:focus {
+    border-color: hsl( var(--clr-dark) / .5);
+}
+
+.underline-indicators-1 > .active,
+.underline-indicators-1 > [aria-selected="true"] {
+    color: hsl( var(--clr-white) / 1);
+    border-color: hsl( var(--clr-dark) / 1); 
+}
+
+
+
+
+
 .tab-list {
     --gap: 2rem;
 }
@@ -497,6 +520,10 @@ body {
     }
 } 
 
+
+
+
+
 /* cube */
 
 
@@ -514,7 +541,9 @@ body {
          ;
       }
       
-   
+      body.profile > .header{
+        grid-area: header;
+    } 
 
 body.profile > .header{
     grid-area: header;
