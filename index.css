@@ -105,7 +105,7 @@ body {
 /* make images easier to work with */
 img,
 picture {
-    max-width: 80%;
+    max-width: 100%;
     display: block;
 }
 
@@ -280,7 +280,7 @@ select {
 /* primary-header */
 
 .logo {
-    margin: 1.5rem clamp(10rem, 5vw, 3.5rem);
+    margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
 }
 
 .primary-header {
@@ -662,6 +662,10 @@ body.perspective > .canvas{
     grid-area: canvas;
     height: 100vh;
 }
+
+
+
+
 .grid-container {
     text-align: center;
     display: grid;
