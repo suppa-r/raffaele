@@ -21,6 +21,31 @@
   <script src="navigation.js" defer></script>
 </head>
 <style>
+.profile {
+    grid-template-columns:120px 1fr auto;
+   grid-template-rows: 150px 1fr 100px;
+    grid-template-areas: 
+        'siderbar header header'
+        'sidebar content content'
+      'h1 h1 h1'
+        ;
+}
+.profile > .header{
+    grid-area: header;
+}
+
+.profile > .sidebar{
+    grid-area: sidebar;
+}
+
+.profile > .bg-image{
+    grid-area: content;
+}
+.profile > .h1{
+    grid-area: h1;
+
+}
+
 .w3-row-padding img {margin-bottom: 16px}
  /* Set the width of the sidebar to 120px */
  .w3-sidebar {width: 120px;background: #0e0d0d;}
@@ -30,7 +55,7 @@
  @media only screen and (max-width: 600px) {#main {margin-left: 0}}
  </style>
 <body class="profile">
-  <a class="skip-to-content" href="#main">Skip to content</a>
+  <a class="skip-to-content" href="main">Skip to content</a>
   <header class="primary-header flex">
     <div>
       <img src="logo.svg" alt="logo" class="logo">
@@ -49,7 +74,7 @@
         </ul>
     </nav>
   </header>
-
+  <main id="main" class="profile">
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
  <nav class="w3-sidebar w3-bar-block w3-small w3-black w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
@@ -97,15 +122,15 @@
 </div>
 
 
-<main id="main" class="profile">
 
 
 
-  <h1 class="d-block fs-500 ff-serif text-accent" style="margin-top: 200px;">My Profile .. Browse .. Please</h1>
+
+  
   
  
  
-  <div class="bg-image" style="align-items: center;"></div>
+  <div class="bg-image"></div>
  
   <div class="cube">
       <div class="face front">
@@ -149,7 +174,7 @@
           <div class="bg"></div>
           <div class="bg second"></div>
           <div class="content">
-  </div></div></div>
- 
+          </div></div></div>
+  <h1 class="fs-500 ff-serif letter-spacing-1 text-accent">My Profile .. Browse .. Please</h1>
 </main>
   </body></html>

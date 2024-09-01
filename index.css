@@ -14,7 +14,7 @@
     --fs-700: 1.5rem;
     --fs-600: 1rem;
     --fs-500: 1rem;
-    --fs-400: 0.9375rem;
+    --fs-400: 1.275rem;
     --fs-300: 1rem;
     --fs-200: 0.875rem;
     
@@ -30,7 +30,7 @@
         --fs-700: 2.5rem;
         --fs-600: 1.5rem;
         --fs-500: 1.25rem;
-        --fs-400: 1rem;
+        --fs-400: 1.1rem;
     }
 }
 
@@ -41,7 +41,7 @@
         --fs-700: 3.5rem;
         --fs-600: 2rem;
         --fs-500: 1.75rem;
-        --fs-400: 1.125rem;
+        --fs-400: 1.325rem;
     }
 }
 
@@ -81,11 +81,7 @@ h6,
 p {
     font-weight: 400;
 }
-h2{
-    display:block;
-    text-align:center;
-    justify-content: center;
-}
+
 /* set up the body */
 body {
     font-family: var(--ff-sans-normal);
@@ -99,7 +95,6 @@ body {
     grid-template-rows: min-content 1fr;
     
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 /* make images easier to work with */
@@ -340,7 +335,7 @@ select {
         right: 1rem;
         top: 2rem;
         background: transparent;
-        background-image: url(icon-hamburger.svg);
+        background-image: url(./assets/shared/icon-hamburger.svg);
         background-repeat: no-repeat;
         background-position: center;
         width: 1.5rem;
@@ -349,7 +344,7 @@ select {
     }
     
     .mobile-nav-toggle[aria-expanded="true"] {
-        background-image: url(icon-close.svg);
+        background-image: url(./assets/shared/icon-close.svg);
     }
     
     .mobile-nav-toggle:focus-visible {
@@ -415,26 +410,6 @@ select {
     border-color: hsl( var(--clr-white) / 1); 
 }
 
-.underline-indicators-1 > * {
-    cursor: pointer;
-    padding: var(--underline-gap, .5rem) 0;
-    border: 0;
-    border-bottom: .2rem solid hsl( var(--clr-dark) / 0 );
-    background-color: transparent;
-}
-
-.underline-indicators-1 > *:hover,
-.underline-indicators-1 > *:focus {
-    border-color: hsl( var(--clr-dark) / .5);
-}
-
-.underline-indicators-1 > .active,
-.underline-indicators-1 > [aria-selected="true"] {
-    color: hsl( var(--clr-white) / 1);
-    border-color: hsl( var(--clr-dark) / 1); 
-}
-
-
 .tab-list {
     --gap: 2rem;
 }
@@ -466,204 +441,61 @@ body {
 }
 /* home */
 .home {
-    background-image: url(background-home-mobile.jpg);
+    background-image: url(./assets/home/background-home-mobile.jpg);
 }
 
 @media (min-width: 35rem) {
     .home {
         background-position: center center;
-        background-image: url(background-home-tablet.jpg);
+        background-image: url(./assets/home/background-home-tablet.jpg);
     }
 }
 
 @media (min-width: 45rem) {
     .home {
-        background-image: url(background-home-desktop.jpg);
+        background-image: url(./assets/home/background-home-desktop.jpg);
     }
 } 
 
-
 /* destination */
 .destination {
-    background-image: url(background-destination-mobile.jpg);
+    background-image: url(./assets/destination/background-destination-mobile.jpg);
 }
 
 @media (min-width: 35rem) {
     .destination {
         background-position: center center;
-        background-image: url(background-destination-tablet.jpg);
+        background-image: url(./assets/destination/background-destination-tablet.jpg);
     }
 }
 
 @media (min-width: 45rem) {
     .destination {
-        background-image: url(background-destination-desktop.jpg);
+        background-image: url(./assets/destination/background-destination-desktop.jpg);
     }
 } 
 
 /* crew */
 .crew {
-    background-image: url(background-crew-mobile.jpg);
+    background-image: url(./assets/home/background-crew-mobile.jpg);
 }
 
 @media (min-width: 35rem) {
     .crew {
         background-position: center center;
-        background-image: url(background-crew-tablet.jpg);
+        background-image: url(./assets/crew/background-crew-tablet.jpg);
     }
 }
 
 @media (min-width: 45rem) {
     .crew {
-        background-image: url(background-crew-desktop.jpg);
+        background-image: url(./assets/crew/background-crew-desktop.jpg);
     }
 } 
 
-
-/* profile */
-.profile {
-    background-image: url(background-crew-mobile.jpg);
-}
-
-@media (min-width: 35rem) {
-    .profile {
-        background-position: center center;
-        background-image: url(background-crew-tablet.jpg);
-    }
-    }
-
-
-@media (min-width: 45rem) {
-    .profile {
-        background-image: url(background-crew-desktop.jpg);
-        
-}
-    }
-
-
-
-body.profile {
-    display: grid;
-    grid-template-columns:120px 1fr 1fr ;
-    grid-template-rows: 150px 1fr 1fr;
-    overflow-y: hidden;
-    grid-template-areas: 
-        'header header header'
-        'sidebar cube cube'
-        'h1 h1 h1'
-         ;
-      }
-      
- body.profile > .header{
-    grid-area: header;
-} 
-
-body.profile > .h1{
-    grid-area: h1;
-}
-body.profile > .sidebar{
-    grid-area: sidebar;
-}
-body.profile > .cube{
-    grid-area: cube;
-}
-
-
-
-/* genesis */
-body.genesis{
- 
-    grid-template-columns:120px 1fr 1fr;
-    grid-template-rows: 150px 1fr 1fr;
-    grid-template-areas: 
-    'header header header'
-    'sidebar content image'
-    'sidebar content-1 image'
-          
-    ;
-}
-
-body.genesis > .header{
-    grid-area: header;
-}
-
-body.genesis > .genesis-info{
-    grid-area: content;
-    margin-left: 150px;
-}
-body.genesis > .genesis-info-1{
-    grid-area: content-1;
-    margin-left: 150px;
-}
-
-body.genesis > .picture{
-    grid-area: image;
-    margin-top: 100px;
-   
-}
-
-
-body.genesis {
-    background-image: url(background-home-mobile.jpg);
-}
-
-@media (min-width: 35rem) {
-    body.genesis {
-        background-position: center center;
-        background-image: url(background-home-tablet.jpg);
-    }
-}
-
-@media (min-width: 45rem) {
-    body.genesis {
-        background-image: url(background-home-desktop.jpg);
-    }
-} 
 /* ----------------------------- */
 /* Layout                        */
 /* ----------------------------- */
-/* perspective */
-body.perspective{
-  
-    grid-template-columns:160px 1fr;
-    grid-template-rows: 150px 1fr;
-    grid-template-areas: 
-        'header header'
-        'sidebar canvas'
-        ;
-}
-/* perspective */
-body.perspective {
-    background-color: black;
-}
-
-@media (min-width: 35rem) {
-    body.perspective {
-        background-position: center center;
-        background-color: black;
-    }
-}
-
-@media (min-width: 45rem) {
-    body.perspective {
-        background-color: black;
-    }
-} 
-
-
-body.perspective > .header{
-    grid-area: header;
-}
-body.perspective > .sidebar{
-    grid-area: sidebar;
-}
-
-body.perspective > .canvas{
-    grid-area: canvas;
-    height: 100vh;
-}
-
-
 
 
 .grid-container {
@@ -754,6 +586,7 @@ body.perspective > .canvas{
     }
     
     .destination-meta {
+        
         flex-direction: row;
         justify-content: space-evenly;
     }
@@ -770,55 +603,29 @@ body.perspective > .canvas{
     
 }
 
+
+
+
+
 @media (min-width: 45em) {
     .grid-container {
         text-align: left;
         column-gap: var(--container-gap, 2rem);
         grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(1rem, 1fr);
     }
-}
-
-.grid-container--profile {
-    padding-bottom: max(6rem, 20vh);
-    align-items: end;
-    overflow-y: hidden;
-    overflow-x: hidden;
-}
-
-.grid-container--profile > *:first-child {
-    grid-column: 2;
-}
-
-.grid-container--profile > *:last-child {
-    grid-column: 3;
-}
-
-
-        
-        .grid-container--home {
-            padding-bottom: max(6rem, 20vh);
-            align-items: end;
-            overflow-y: hidden;
-
-        }
-        
-        .grid-container--home > *:first-child {
-            grid-column: 2;
-        }
     
-        .grid-container--home > *:last-child {
-            grid-column: 3;
-        }
+    .grid-container--home {
+        padding-bottom: max(6rem, 20vh);
+        align-items: end;
+    }
+    
+    .grid-container--home > *:first-child {
+        grid-column: 2;
+    }
 
-
-
-
-
-
-
-
-
-
+    .grid-container--home > *:last-child {
+        grid-column: 3;
+    }
     
     .grid-container--destination {
         justify-items: start;
@@ -849,7 +656,33 @@ body.perspective > .canvas{
     
     .grid-container--crew > picture {
         grid-column: span 2;
-        align-self: end; 
+        align-self: end;
         max-width: 90%;
     }
 
+}
+
+.profile {
+    grid-template-columns:120px 1fr auto;
+   grid-template-rows: 150px 1fr 100px;
+    grid-template-areas: 
+        'siderbar header header'
+        'sidebar content content'
+      'h1 h1 h1'
+        ;
+}
+.profile > .header{
+    grid-area: header;
+}
+
+.profile > .sidebar{
+    grid-area: sidebar;
+}
+
+.profile > .bg-image{
+    grid-area: content;
+}
+.profile > .h1{
+    grid-area: h1;
+
+}
