@@ -278,6 +278,10 @@ select {
     margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
 }
 
+.logo-1 {
+    margin: 1.5rem clamp(20rem, 5vw, 3.5rem);
+}
+
 .primary-header {
     justify-content: space-between;
     align-items: center;
@@ -436,6 +440,7 @@ select {
 /* Page specific background      */
 /* ----------------------------- */
 body {
+  
     background-size: cover;
     background-position: bottom center;
 }
@@ -454,6 +459,25 @@ body {
 @media (min-width: 45rem) {
     .home {
         background-image: url(background-home-desktop.jpg);
+        height: 400px;
+    }
+} 
+
+.home-1 {
+    background-image: url(pexels-eberhardgross-2098428.jpg);
+}
+
+@media (min-width: 35rem) {
+    .home-1 {
+        background-position: center center;
+        background-image: url(pexels-eberhardgross-2098428.jpg);
+    }
+}
+
+@media (min-width: 45rem) {
+    .home-1 {
+        background-image: url(pexels-eberhardgross-2098428.jpg);
+        max-height: 100vh;
     }
 } 
 
