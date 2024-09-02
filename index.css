@@ -95,6 +95,7 @@ body {
     grid-template-rows: min-content 1fr;
     
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 /* make images easier to work with */
@@ -440,7 +441,7 @@ select {
 /* Page specific background      */
 /* ----------------------------- */
 body {
-    
+    overflow-y: hidden;
     background-size: cover;
     background-position: bottom center;
 }
@@ -482,25 +483,6 @@ body {
 } 
 
 
-.home-2 {
-    background-color: black;
-}
-
-@media (min-width: 35rem) {
-    .home-2 {
-        background-position: center center;
-        background-color: black;
-    }
-}
-
-@media (min-width: 45rem) {
-    .home-2 {
-        background-color: black;
-        width:100vw;
-    }
-} 
-
-
 
 
 
@@ -524,6 +506,23 @@ body {
     }
 } 
 
+/* genesis */
+.grid-container--genesis {
+    width:100vw;
+}
+
+@media (min-width: 35rem) {
+    .grid-container--genesis {
+        background-position: center center;
+      
+    }
+}
+
+@media (min-width: 45rem) {
+    .grid-container--genesis {
+        width:100vw;
+    }
+} 
 /* crew */
 .crew {
     background-image: url(background-crew-mobile.jpg);
@@ -548,12 +547,12 @@ body {
 
 
 .grid-container {
-  
+  overflow-y: hidden;
     text-align: center;
     display: grid;
     place-items: center;
     padding-inline: 1rem;
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
 }
 
 .grid-container p:not([class]) {
@@ -601,22 +600,29 @@ body {
 }
 /* genesis layout */
 .grid-container--genesis {
+   
+    overflow-y: hidden;
+    grid-template-columns: 120px 1fr 1fr;
+    grid-template-rows: 150px auto;
     --flow-space: 2rem;
     grid-template-areas: 
-        'header header header header'
-        'sidebar content content image'
-       'sidebar content content image'
-        ;
+        'header header header'
+        'sidebar content image';
 }
 .grid-container--genesis > picture {
     grid-area: image;
-    max-width: 93%;
-    align-self: end;
+    max-width: 100%;
+    height:600px;
+    align-self:stretch;
+   
+   
+    
 }
 
 .grid-container--genesis > .genesis-info {
     grid-area: content;
     align-self: start;
+    margin-left:150px;
 }
 
 .grid-container--genesis > .sidebar {
