@@ -37,12 +37,10 @@ body {
   font-family: system-ui, sans-serif;
 }
 
-canvas,
-.editor,
-#controls {
-  grid-row: 1;
-  grid-column: 1;
-}
+/*canvas,
+.editor,*/
+
+
 
 canvas {
   width: 100%;
@@ -60,7 +58,7 @@ canvas {
 }
 
 .editor {
-  color: #fefefe;
+  color: #222;
   tab-size: 2;
   border: none;
   resize: none;
@@ -207,22 +205,9 @@ input:hover {
   width: 1.25em;
 }
 
-#btnToggleView::after {
-  content: '👁';
-}
-
-#btnToggleView:checked::after {
-  content: '✏️';
-}
-
-#btnToggleResolution::after {
-  content: '️⃣';
-}
 
 #btnToggleResolution:checked::after {
   content: '️⃣';
 }
 
-#btnReset::after {
-  content: '⏮️';
-}
+

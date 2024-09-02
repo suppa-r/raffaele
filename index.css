@@ -636,7 +636,7 @@ body {
 
 .grid-container--perspective {
    
-    grid-template-columns:250px 2fr;
+    grid-template-columns:120px 2fr;
         justify-items:self-start;
     grid-template-rows: 150px 1fr;
     grid-template-areas: 
