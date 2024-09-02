@@ -482,6 +482,27 @@ body {
 } 
 
 
+.home-2 {
+    background-color: black;
+}
+
+@media (min-width: 35rem) {
+    .home-2 {
+        background-position: center center;
+        background-color: black;
+    }
+}
+
+@media (min-width: 45rem) {
+    .home-2 {
+        background-color: black;
+        width:100vw;
+    }
+} 
+
+
+
+
 
 
 
@@ -609,7 +630,7 @@ body {
 
 .grid-container--perspective {
    
-    grid-template-columns:120px 1fr;
+    grid-template-columns:250px 2fr;
         justify-items:self-start;
     grid-template-rows: 150px 1fr;
     grid-template-areas: 
