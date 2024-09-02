@@ -658,13 +658,15 @@ body {
 @media (min-width: 45em) {
     .grid-container {
         text-align: left;
+        row-gap: 0rem;
         column-gap: var(--container-gap, 2rem);
         grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(1rem, 1fr);
+      
     }
     
-    .grid-container--home {
-        padding-bottom: max(6rem, 20vh);
-        align-items: end;
+  .grid-container--home {
+        padding-bottom: max(3rem, 20vh);
+      
     }
     
     .grid-container--home > *:first-child {
@@ -674,6 +676,7 @@ body {
     .grid-container--home > *:last-child {
         grid-column: 3;
     }
+
     
     .grid-container--destination {
         justify-items: start;
