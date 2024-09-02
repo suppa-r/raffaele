@@ -14,7 +14,7 @@
     --fs-700: 1.5rem;
     --fs-600: 1rem;
     --fs-500: 1rem;
-    --fs-400: 1.275rem;
+    --fs-400: 0.9375rem;
     --fs-300: 1rem;
     --fs-200: 0.875rem;
     
@@ -30,7 +30,7 @@
         --fs-700: 2.5rem;
         --fs-600: 1.5rem;
         --fs-500: 1.25rem;
-        --fs-400: 1.1rem;
+        --fs-400: 1rem;
     }
 }
 
@@ -41,7 +41,7 @@
         --fs-700: 3.5rem;
         --fs-600: 2rem;
         --fs-500: 1.75rem;
-        --fs-400: 1.325rem;
+        --fs-400: 1.125rem;
     }
 }
 
@@ -99,7 +99,7 @@ body {
 
 /* make images easier to work with */
 img,
-picture {
+picutre {
     max-width: 100%;
     display: block;
 }
@@ -441,55 +441,55 @@ body {
 }
 /* home */
 .home {
-    background-image: url(./assets/home/background-home-mobile.jpg);
+    background-image: url(background-home-mobile.jpg);
 }
 
 @media (min-width: 35rem) {
     .home {
         background-position: center center;
-        background-image: url(./assets/home/background-home-tablet.jpg);
+        background-image: url(background-home-tablet.jpg);
     }
 }
 
 @media (min-width: 45rem) {
     .home {
-        background-image: url(./assets/home/background-home-desktop.jpg);
+        background-image: url(background-home-desktop.jpg);
     }
 } 
 
 /* destination */
 .destination {
-    background-image: url(./assets/destination/background-destination-mobile.jpg);
+    background-image: url(background-destination-mobile.jpg);
 }
 
 @media (min-width: 35rem) {
     .destination {
         background-position: center center;
-        background-image: url(./assets/destination/background-destination-tablet.jpg);
+        background-image: url(background-destination-tablet.jpg);
     }
 }
 
 @media (min-width: 45rem) {
     .destination {
-        background-image: url(./assets/destination/background-destination-desktop.jpg);
+        background-image: url(background-destination-desktop.jpg);
     }
 } 
 
 /* crew */
 .crew {
-    background-image: url(./assets/home/background-crew-mobile.jpg);
+    background-image: url(background-crew-mobile.jpg);
 }
 
 @media (min-width: 35rem) {
     .crew {
         background-position: center center;
-        background-image: url(./assets/crew/background-crew-tablet.jpg);
+        background-image: url(background-crew-tablet.jpg);
     }
 }
 
 @media (min-width: 45rem) {
     .crew {
-        background-image: url(./assets/crew/background-crew-desktop.jpg);
+        background-image: url(background-crew-desktop.jpg);
     }
 } 
 
@@ -507,7 +507,7 @@ body {
 }
 
 .grid-container p:not([class]) {
-    max-width: 50ch;
+    max-width: 70ch;
 }
 
 .numbered-title {
@@ -549,6 +549,59 @@ body {
 .destination-meta p {
     font-size: 1.75rem;
 }
+/* genesis layout */
+.grid-container--genesis {
+    --flow-space: 2rem;
+    grid-template-areas: 
+        'header header header header'
+        'sidebar content content image'
+       'sidebar content content image'
+        ;
+}
+.grid-container--genesis > picture {
+    grid-area: image;
+    max-width: 93%;
+    align-self: end;
+}
+
+.grid-container--genesis > .genesis-info {
+    grid-area: content;
+    align-self: start;
+}
+
+.grid-container--genesis > .sidebar {
+    grid-area: sidebar;
+    align-self: start;
+}
+
+
+
+
+
+.body-perspective {
+    --flow-space: 2rem;
+    grid-template-areas: 
+        'header header header header'
+        'sidebar canvas canvas canvas'
+        'sidebar canvas canvas canvas'
+         'sidebar canvas canvas canvas'
+        ;
+}
+.body-perspective > .header {
+    grid-area: header;
+    align-self: start;
+}
+
+.body-perspective > .sidebar {
+    grid-area: sidebar;
+    align-self: start;
+}
+
+.body-perspective > .canvas {
+    grid-area: canvas;
+    align-self: start;
+}
+
 
 /* crew layout */
 
@@ -586,7 +639,6 @@ body {
     }
     
     .destination-meta {
-        
         flex-direction: row;
         justify-content: space-evenly;
     }
@@ -602,10 +654,6 @@ body {
     
     
 }
-
-
-
-
 
 @media (min-width: 45em) {
     .grid-container {
@@ -656,33 +704,8 @@ body {
     
     .grid-container--crew > picture {
         grid-column: span 2;
-        align-self: end;
+        align-self: end; 
         max-width: 90%;
     }
-
-}
-
-.profile {
-    grid-template-columns:120px 1fr auto;
-   grid-template-rows: 150px 1fr 100px;
-    grid-template-areas: 
-        'siderbar header header'
-        'sidebar content content'
-      'h1 h1 h1'
-        ;
-}
-.profile > .header{
-    grid-area: header;
-}
-
-.profile > .sidebar{
-    grid-area: sidebar;
-}
-
-.profile > .bg-image{
-    grid-area: content;
-}
-.profile > .h1{
-    grid-area: h1;
 
 }
