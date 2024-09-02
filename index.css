@@ -87,7 +87,7 @@ body {
     font-family: var(--ff-sans-normal);
     font-size: var(--fs-400);
     color: hsl( var(--clr-white) );
-    background-color: hsl( var(--clr-dark) );
+   /*background-color: hsl( var(--clr-dark) );*/
     line-height: 1.5;
     min-height: 100vh;
     
@@ -99,7 +99,7 @@ body {
 
 /* make images easier to work with */
 img,
-picutre {
+picture {
     max-width: 100%;
     display: block;
 }
@@ -339,7 +339,7 @@ select {
         right: 1rem;
         top: 2rem;
         background: transparent;
-        background-image: url(./assets/shared/icon-hamburger.svg);
+        background-image: url(icon-hamburger.svg);
         background-repeat: no-repeat;
         background-position: center;
         width: 1.5rem;
@@ -348,7 +348,7 @@ select {
     }
     
     .mobile-nav-toggle[aria-expanded="true"] {
-        background-image: url(./assets/shared/icon-close.svg);
+        background-image: url(icon-close.svg);
     }
     
     .mobile-nav-toggle:focus-visible {
@@ -440,7 +440,7 @@ select {
 /* Page specific background      */
 /* ----------------------------- */
 body {
-  
+    
     background-size: cover;
     background-position: bottom center;
 }
@@ -480,6 +480,10 @@ body {
         max-height: 100vh;
     }
 } 
+
+
+
+
 
 /* destination */
 .destination {
@@ -523,6 +527,7 @@ body {
 
 
 .grid-container {
+  
     text-align: center;
     display: grid;
     place-items: center;
@@ -602,28 +607,33 @@ body {
 
 
 
-.body-perspective {
-    --flow-space: 2rem;
+.grid-container--perspective {
+   
+    grid-template-columns:120px 1fr;
+        justify-items:self-start;
+    grid-template-rows: 150px 1fr;
     grid-template-areas: 
-        'header header header header'
-        'sidebar canvas canvas canvas'
-        'sidebar canvas canvas canvas'
-         'sidebar canvas canvas canvas'
+        'header header'
+        'sidebar canvas'
+      
+     
         ;
 }
-.body-perspective > .header {
+.grid-container--perspective > .header {
     grid-area: header;
-    align-self: start;
+    align-items: start;
 }
 
-.body-perspective > .sidebar {
+.grid-container--perspective > .sidebar {
     grid-area: sidebar;
-    align-self: start;
+    align-items: start;
 }
 
-.body-perspective > .canvas {
+.grid-container--perspective > .canvas {
     grid-area: canvas;
-    align-self: start;
+    justify-items: self-start;
+   width: 100vw;
+  
 }
 
 
@@ -685,7 +695,7 @@ body {
         row-gap: 0rem;
         column-gap: var(--container-gap, 2rem);
         grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(1rem, 1fr);
-      
+       
     }
     
   .grid-container--home {

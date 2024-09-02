@@ -24,6 +24,7 @@
 
 html,
 body {
+  width:100vw;
   height: 100vh;
   height: 100dvh;
   margin: 0;
@@ -47,7 +48,7 @@ canvas {
   width: 100%;
   height: auto;
   object-fit: contain;
-  background: black;
+  background: #222;
   touch-action: none;
 }
 

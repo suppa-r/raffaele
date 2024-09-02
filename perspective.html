@@ -20,7 +20,7 @@
   <script src="perspective.js" defer></script>
 </head>
   <style>
-    /*body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}*/
+ 
     .w3-row-padding img {margin-bottom: 12px}
     /* Set the width of the sidebar to 120px */
     .w3-sidebar {width: 120px;background: #222;}
@@ -31,7 +31,7 @@
     </style>
 
   
-  <body class="perspective">
+  <body class="grid-container--perspective">
 	
 	  <a class="skip-to-content" href="#main">Skip to content</a>
 
@@ -79,9 +79,9 @@
 </div>
 
 
-<header class="primary-header flex"style="margin-left:100px;">
+<header class="primary-header flex">
     <div>
-      <img src="logo.svg" alt="logo" class="logo">
+      <img src="logo.svg" alt="logo" class="logo-1">
     </div>
     <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
     <nav>
@@ -98,8 +98,8 @@
     </nav>
   </header>
 
-<main id="main">
-
+<main id="main" class="grid-container--perspective home-1">
+<br><br><br><br><br><br>
 
 				<canvas id="canvas"></canvas>
 				<textarea id="codeEditor" class="editor" spellcheck="false" autocorrect="off" autocapitalize="off" translate="no" oninput="render()"></textarea>
