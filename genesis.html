@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css.css">
  
   <style>
-    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+  
     .w3-row-padding img {margin-bottom: 16px}
     /* Set the width of the sidebar to 120px */
     .w3-sidebar {width: 120px;background: #222;}
@@ -68,33 +68,35 @@
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+    <a href="index.html" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="profile.html" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="photography.html" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="contact.html" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
   </div>
 </div>
 
-
-
-
-<body class="genesis">
+<body class="grid-container--genesis w3-black">
   <a class="skip-to-content" href="#main">Skip to content</a>
-  <header class="primary-header flex"style="margin-left:100px;">
+
+
+
+ 
+  <header class="primary-header flex">
     <div>
-      <img src="logo.svg" alt="logo" class="logo"style="margin-left:90px;">
+      <img src="logo.svg" alt="logo" class="logo-1">
     </div>
     <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
     <nav>
         <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
-          
-          <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="revit.html"><span aria-hidden="true">01</span>Revit</a>
-            <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="skills.html"><span aria-hidden="true">01</span>Skills</a>
-              <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="perspective.html"><span aria-hidden="true">02</span>Fun</a>
-                <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="architecture.html"><span aria-hidden="true">03</span>Architecture</a>
-                  <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="photography.html"><span aria-hidden="true">04</span>Photos</a>
-                    <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="contact.html"><span aria-hidden="true">05</span>Contact</a>
-                        <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="index.html"><span aria-hidden="true">06</span>Home</a>
+       
+        <li class="active"><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="profile.html"><span aria-hidden="true">01</span>Profile</a>
+          <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="revit.html"><span aria-hidden="true">02</span>Revit</a>
+            <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="skills.html"><span aria-hidden="true">03</span>Skills</a>
+              <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="perspective.html"><span aria-hidden="true">04</span>Fun</a>
+                <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="architecture.html"><span aria-hidden="true">05</span>Architecture</a>
+                  <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="photography.html"><span aria-hidden="true">06</span>Photos</a>
+                    <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="contact.html"><span aria-hidden="true">07</span>Contact</a>
+                        <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="index.html"><span aria-hidden="true">08</span>Home</a>
         </ul>
     </nav>
   </header>
@@ -102,8 +104,8 @@
 
 
   
-
-  <p class="genesis-info ff-sans-cond text-accent  fs-400 d-block letter-spacing-2">
+<article class="genesis-info">
+  <p class="ff-sans-cond text-white  fs-400  letter-spacing-2">
    
     The Divine Spark of Genius, and the all around tremendous talent, began in the Embryonic Form (God was showing off, Again)<br> 
     But this is the moment that miracle took effect and became the physical substance of Answered Prayer -- my mom's intercession -- had to be!<br><br>
@@ -111,20 +113,23 @@
      Suddenly! After the First Default of my New Year's Resolution.<br><br>I had changed all the light bulbs and was getting overdosed by <strong>**MASH**</strong>re-runs.<br><br>Web Design became a Million Dollar
      Solution to my mounting boredom and completely outmatched it.<br><br><strong>What a Relief Web Design Became</strong><br><br>
      <br> That education became the start of this on your screen.</p><br><br>
-     <h1 class="genesis-info-1 fs-500  ff-serif letter-spacing-1">
+     <h1 class="genesis-info-1 fs-500  ff-serif text-white  letter-spacing-1">
       <strong>I hope it's a success</strong></h1>
+</article>
 
-  </div>
 
 
     
        
 
 
-  <picture id="genesis-image"style="margin-top:117px;">
-   <img src="young-me.png" alt="raffaele">
- 
+  <picture id="genesis-image">
+   
+      <source srcset="young-me.webp" type="image/webp">
+      <img src="young-me.png" alt="raffaele">
     </picture>
+ 
+  
    </main>   
 </body>
 </html>

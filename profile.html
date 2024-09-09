@@ -20,15 +20,12 @@
   <script src="perspective.js" defer></script>
 </head>
   <style>
-  h1 {
-    text-align: center; /* Align text in the center */
-    position: absolute; /* Position the element */
-    top: 50%; /* Move the element down by 50% of the viewport height */
-    left: 50%; /* Move the element horizontally by 50% of the viewport width */
-    transform: translate(-50%, -50%); /* Center the element precisely */
-  }
-    /*body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}*/
-    .w3-row-padding img {margin-bottom: 12px}
+.home-1 {
+  background-image: url(pexels-eberhardgross-2098428.jpg);
+  max-height: 100vh;
+  overflow-y: hidden;
+
+}
     /* Set the width of the sidebar to 120px */
     .w3-sidebar {width: 120px;background: #222;}
     /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
@@ -36,11 +33,12 @@
     /* Remove margins from "page content" on small screens */
     @media only screen and (max-width: 600px) {#main {margin-left: 0}}
     </style>
-
+ 
   
-  <body class="profile">
+<body class="home-1">
+  <a class="skip-to-content" href="#main">Skip to content</a>
 	
-	  <a class="skip-to-content" href="#main">Skip to content</a>
+	
 
    
  
@@ -68,11 +66,6 @@
       <i class="fa fa-phone w3-xxlarge"></i>
       <p>Contact</p>
     </a>
-
-    <a href="revit.html" class="w3-bar-item w3-button w3-black w3-padding-large w3-hover-white">
-      <i class="fa fa-pencil w3-xxlarge"></i>
-      <p>Revit</p>
-    </a>
  
     <a href="index.html" class="w3-bar-item w3-button w3-black w3-padding-large w3-hover-white">
       <i class="fa fa-home w3-xxlarge"></i>
@@ -84,40 +77,38 @@
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
     <a href="index.html" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="profile.html" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="profile.html" class="w3-bar-item w3-button" style="width:25% !important">PROFILE</a>
     <a href="photography.html" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
     <a href="contact.html" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
   </div>
 </div>
 
 
-<header class="primary-header flex"style="margin-left:100px;">
+  <header class="primary-header flex">
     <div>
-      <img src="logo.svg" alt="logo" class="logo">
+      <img src="logo.svg" alt="logo" class="logo-1">
     </div>
     <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
     <nav>
         <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
           
          
-       
-              <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="perspective.html"><span aria-hidden="true">01</span>Fun</a>
-             
-                <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="revit.html"><span aria-hidden="true">01</span>Revit</a>
-                <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="architecture.html"><span aria-hidden="true">02</span>Architecture</a>
-                  <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="photography.html"><span aria-hidden="true">03</span>Photos</a>
-                    <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="contact.html"><span aria-hidden="true">04</span>Contact</a>
-                        <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="index.html"><span aria-hidden="true">05</span>Home</a>
+            <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="skills.html"><span aria-hidden="true">01</span>Skills</a>
+              <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="perspective.html"><span aria-hidden="true">02</span>Fun</a>
+                <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="architecture.html"><span aria-hidden="true">03</span>Architecture</a>
+                  <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="photography.html"><span aria-hidden="true">04</span>Photos</a>
+                    <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="contact.html"><span aria-hidden="true">05</span>Contact</a>
+                        <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="index.html"><span aria-hidden="true">06</span>Home</a>
         </ul>
     </nav>
   </header>
 
  
-  <main id="main" class="profile">
-   
-    <h1 class="d-block fs-500 ff-serif text-accent">Browse .. Please</h1>
- 
- 
+  <main id="main" class="grid-container grid-container--home">
+   <div>
+    <h1 class="fs-500 ff-serif text-white">Browse .. Please .. Left .. Top</h1>
+   </div>
+ <div>
   <div class="bg-image"></div>
  
   <div class="cube">
@@ -164,9 +155,7 @@
           <div class="content">
   
   
-          </div>
-      </div>
-  </div></main>
+          </div></div></div></div></main>
   
   
 
