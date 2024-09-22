@@ -225,6 +225,10 @@ select {
     line-height: 1.1;
 }
 
+h1{
+    margin-left:20%;
+}
+
 .numbered-title {
     font-family: var(--ff-sans-cond);
     font-size: var(--fs-500);
