@@ -651,6 +651,23 @@ body {
     }
 } 
 
+/* ryerson */
+.grid-container--ryerson {
+    background-image: url(background-destination-mobile.jpg);
+}
+
+@media (min-width: 35rem) {
+    .grid-container--ryerson {
+        background-position: center center;
+        background-image: url(background-destination-tablet.jpg);
+      
+    }
+}
+@media (min-width: 45rem) {
+    .grid-container--ryerson {
+        background-image: url(background-destination-desktop.jpg);
+    }
+} 
 
 /* crew */
 .crew {
@@ -741,11 +758,7 @@ body {
     grid-area: image;
     max-width: 100%;
     aspect-ratio: 1 / 1;
- 
-   
-  
-   
-}
+ }
 
 .grid-container--genesis > .header {
     grid-area: header;
@@ -762,6 +775,49 @@ body {
     grid-area: sidebar;
     align-self: start;
 }
+
+
+
+/* ryerson layout */
+.grid-container--ryerson {
+   grid-template-columns: 120px 1fr 1fr;
+   grid-template-rows: 150px 1fr;
+   max-height: 100vh;
+  gap:4rem;
+    grid-template-areas: 
+        'header header header'
+        'sidebar content image';
+}
+.grid-container--ryerson > .ryerson-image {
+    grid-area: image;
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+    align-self: end;
+    margin-left: 10em;
+ 
+ 
+}  
+  
+.grid-container--ryerson > .header {
+    grid-area: header;
+    align-items: start;
+}
+
+.grid-container--ryerson > .ryerson-info {
+    grid-area: content;
+    align-self: start;
+    width: 100%;
+   
+}
+
+.grid-container--ryerson > .sidebar {
+    grid-area: sidebar;
+    align-self: start;
+}
+
+
+
+
 
 
 
@@ -783,6 +839,7 @@ grid-area: header;
 .grid-container--beginnings .beginnings-info{
     grid-area: content;
     margin-left:150px;
+    width:100%;
 }
 
 .grid-container--beginnings > .beginnings-image {
