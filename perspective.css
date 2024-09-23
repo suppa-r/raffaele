@@ -23,10 +23,18 @@
 }
 
 html,
-body {
+/*body {
   width:100%;
   height: 100vh;
   height: 100dvh;
+  margin: 0;
+  overflow: hidden;
+}*/
+
+body {
+  width:95%;
+  height: 90vh;
+  height: 90dvh;
   margin: 0;
   overflow: hidden;
 }
