@@ -304,6 +304,10 @@ select {
     margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
 }
 
+.logo-1 {
+    margin: 3rem clamp(1.5rem, 10vw, 20rem);
+}
+
 .primary-header {
     justify-content: space-between;
     align-items: center;
@@ -318,6 +322,19 @@ select {
     background: hsl( var(--clr-white) / 0.05);
     backdrop-filter: blur(1.5rem);
 }
+
+
+.primary-navigation-1 {
+    --gap: clamp(1.5rem, 5vw, 3.5rem);
+    --underline-gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: hsl( var(--clr-white) / 0.05);
+    backdrop-filter: blur(1.5rem);
+}
+
+
 
 .primary-navigation a {
     text-decoration: none;
@@ -508,6 +525,27 @@ body {
        }
 } 
 
+/* profile */
+.profile {
+    background-image: url(background-home-mobile.jpg);
+}
+
+@media (min-width: 35rem) {
+    .profile {
+        background-position: center center;
+        background-image: url(background-home-tablet.jpg);
+    }
+}
+
+@media (min-width: 45rem) {
+    .profile {
+        background-position: bottom center;
+        background-image: url(background-home-desktop.jpg);
+
+       }
+} 
+
+
 /* destination */
 .destination {
     background-image: url(background-destination-mobile.jpg);
@@ -620,6 +658,42 @@ body {
     grid-area: title;
 }
 
+/*profile layout */
+.grid-container--profile{
+    /*padding-bottom: max(1rem, 10vh);
+    align-items: start;*/
+   max-width:80%;
+    min-height: 100vh;
+    justify-content: start;
+    align-items: center;
+  grid-template-areas: 
+  'header . .'
+  'sidebar content image';
+
+
+  
+}
+.grid-container--profile > .header {
+    grid-area: header;
+  
+}
+
+.grid-container--profile > .bg-image {
+    grid-area: image;
+   
+ 
+  
+}
+
+.grid-container--profile > .sidebar {
+    grid-area: sidebar;
+}
+  
+.grid-container--profile > .h1 {
+    grid-area: content;
+  
+}
+
 /* destination layout */
 
 .grid-container--destination {
@@ -696,25 +770,18 @@ body {
 .grid-container--ryerson > .ryerson-image {
     grid-area: image;
     max-width: 60%;
- 
- 
- 
-}  
+ }  
   
 .grid-container--ryerson > .header {
     grid-area: header;
-   
 }
 
 .grid-container--ryerson > .ryerson-info {
     grid-area: content;
-  
-   
 }
 
 .grid-container--ryerson > .sidebar {
     grid-area: sidebar;
-   
 }
 
 
@@ -722,8 +789,8 @@ body {
 .grid-container--beginnings {
     grid-template-columns:120px 2fr;
     justify-items:self-start;
-grid-template-rows: 150px 1fr;
-grid-template-areas: 
+    grid-template-rows: 150px 1fr;
+    grid-template-areas: 
          'header header header'
          'sidebar content image';
  }
@@ -735,8 +802,7 @@ grid-template-areas:
 
 .grid-container--beginnings .beginnings-info{
     grid-area: content;
-   
-}
+   }
 
 .grid-container--beginnings > .beginnings-image {
     grid-area: image;
@@ -755,8 +821,6 @@ grid-template-areas:
     align-items: start;
 }
 
-
-
 .grid-container--perspective > .sidebar {
     grid-area: sidebar;
     align-items: start;
@@ -766,8 +830,7 @@ grid-template-areas:
     grid-area: canvas;
     justify-items: self-start;
    width: 100vw;
-  
-}
+  }
 
 
 /* crew layout */
