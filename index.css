@@ -752,8 +752,8 @@ body {
         grid-column: 3;
     }
     
-    .grid-container--home {
+    /*.grid-container--home {
         padding-bottom: max(4rem, 20vh);
         align-items: end;
     }
-}
+}*/
