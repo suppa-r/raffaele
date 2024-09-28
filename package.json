@@ -1,6 +1,6 @@
 {
-  "name": "Scrim-s01u91j",
-  "description": "https://v2.scrimba.com/build-a-space-travel-website-c014/~025",
+  "name": "Scrim-s0d2b3e848",
+  "description": "https://v2.scrimba.com/new?tpl=s0hvtss08j",
   "scripts": {
     "start": "vite",
     "dev": "vite",
@@ -8,7 +8,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "vite": "latest"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@vitejs/plugin-react": "*"
+  }
 }
