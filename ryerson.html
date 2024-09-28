@@ -16,8 +16,7 @@
   <link rel="stylesheet" href="css.css">
  
   <style>
-  
-    /*.w3-row-padding img {margin-bottom: 16px}*/
+  /*.w3-row-padding img {margin-bottom: 16px}*/
     /* Set the width of the sidebar to 120px */
     .w3-sidebar {width: 120px;background: #000000;}
     /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
@@ -29,7 +28,8 @@
   <script src="navigation.js" defer></script>
 </head>
 
- 
+<body class="genesis">
+  <a class="skip-to-content" href="#main">Skip to content</a>
  <!-- Icon Bar (Sidebar - hidden on small screens) -->
  <nav class="w3-sidebar w3-bar-block w3-small w3-black w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
@@ -75,19 +75,14 @@
   </div>
 </div>
 
-<body class="grid-container--ryerson">
-  <a class="skip-to-content" href="#main">Skip to content</a>
 
-
-
- 
-  <header class="primary-header flex">
+   <header class="primary-header line">
     <div>
       <img src="logo.svg" alt="logo" class="logo-1">
     </div>
     <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
     <nav>
-        <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators line">
        
         <li class="active"><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="profile.html"><span aria-hidden="true">01</span>Profile</a>
           <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="revit.html"><span aria-hidden="true">02</span>Revit</a>
@@ -100,33 +95,42 @@
         </ul>
     </nav>
   </header>
+  <p class="text-accent fs-500 ff-serif letter-spacing-2 w3-center">HENCE .. and .. VOILA<br>
+    <strong> The Subject Matter ... DESIGN and CAREER</strong></p>
 
-        <article class="ryerson-info">
-        <p class="text-accent fs-500 ff-serif letter-spacing-1 w3-center">HENCE .. and .. VOILA<br>
-       The Subject Matter<br>
-      DESIGN and CAREER</p>
-      
-    
-       <p class="text-accent fs-400 ff-serif letter-spacing-1 w3-center">My trip began while I was studying Architecture At Ryerson Polytechnical Institute.<br>
+  <main id="main">
+   <section class="intro">
+   
+         <div class="container row">
+         
+        <div class="col">  
+          <p class="text-accent fs-400 ff-serif letter-spacing-3">
+    My trip began while I was studying Architecture At Ryerson Polytechnical Institute.<br>
         The students in the Faculty of Architecture called it <br>....'Rye High'....<br>
-        ....we were affirmed.... <br>our Curriculum warranted that name. <br> Our timetables included 9 courses per semester<br>
-       To start a debate.<br> Ryerson doesn't Form Architects<br>It doesn't even teach them.<br>
+        ....we were affirmed.... <br>our Curriculum warranted that name. <br> Our timetables included 9 courses per semester</p>
+     
+    </div>
+    <div class="col">  
+   <p class="text-accent fs-400 ff-serif letter-spacing-3">
+    To start a debate.<br> Ryerson doesn't Form Architects<br>It doesn't even teach them.One thing, for certain.<br> 
+      The Admistration deemed the few Crash Courses in The Liberal Arts<br>
+      as sufficient enrichment that would hone our thought processes.<br>Hence, I'm qualified. <br> If you want to talk Shakespeare....maybe....Frued,  now you're chance!</p>
+    </div>
+    <div class="col">
 
-       One thing, for certain.<br> The Admistration deemed the few Crash Courses in The Liberal Arts
-           as sufficient enrichment that would hone our thought processes.
-          <br>Hence, I'm qualified. <br> If you want to talk Shakespeare....maybe....Frued,  now you're chance!<br>
-         The Ryerson name endured but fast became Politically Incorrect, and a target of our fickle Culture.<br>
+     <p class="text-accent fs-400 ff-serif letter-spacing-3">
+
+         The Ryerson name endured but fast became Politically Incorrect, and a target.<br>
             The name was relinquished for a more tolerable and appeasing substitute.<br>
       Poor Egerton.<br> Suddendly, he became the red-neck Fall Guy for a misfortune way way back!</p>
+        </div>
 
-<br>
-<p class="text-accent fs-600 ff-serif letter-spacing-1 w3-center">He won't have any babies named after Him</p>
-        </article>   
-    <div class="ryerson-image"> 
-   
-      <source srcset="Adolphus_Egerton_Ryerson.webp" type="image/webp">
+        <div class="col">  
+   <source srcset="Adolphus_Egerton_Ryerson.webp" type="image/webp">
       <img src="Adolphus_Egerton_Ryerson.png" alt="Douglas Hurley">
-    </div>
- 
+    </div></div> </section> 
+    <p class="text-accent fs-600 ff-serif letter-spacing-1 w3-center">He won't have any babies named after Him<br><br>
+    Or have any Statues erected in his Hometown!</p>
+      
 </body>
 </html>
