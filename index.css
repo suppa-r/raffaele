@@ -448,6 +448,23 @@ body{
     } 
 
 
+/* genesis */
+.genesis {
+    background-image: url(background-destination-mobile.jpg);
+}
+
+@media (min-width: 35rem) {
+    .genesis {
+        background-position: center center;
+        background-image: url(background-destination-tablet.jpg);
+    }
+}
+
+@media (min-width: 45rem) {
+    .genesis {
+        background-image: url(background-destination-desktop.jpg);
+    }
+} 
 
 
 
@@ -591,8 +608,7 @@ section{
 }
 
 
-.col + .col {
-    margin-left: 5rem;
+.col{margin-left: 5rem;
   
   }
 }
@@ -600,6 +616,125 @@ section{
 
   
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container-1 {
+    width: 95%;
+    max-width: 1128px;
+    place-items: left;
+    margin: 0 auto;
+    overflow-y:hidden;
+   
+  }
+ 
+
+@media (min-width:400px) {
+    
+        .row {
+          display:flex;
+          place-items: center;
+          margin-inline: auto;
+         
+      }
+  
+      .col {
+          width:100%;
+          place-items: center;
+          margin-inline: auto;
+          text-align: center;
+         
+         
+     }
+
+
+      .col + .col {
+        margin-inline: auto;
+        place-items: center;
+      }
+    
+    
+  }
+  
+
+  @media (min-width:960px) {
+    
+    .row {
+      display:flex;
+      margin-inline: auto;
+      align-items: center;
+      justify-content: center;
+    }
+
+  .col{
+      width:100%;
+      margin-inline: auto;
+      align-items: center;
+      justify-content: center;
+
+}
+
+
+
+
+  @media (min-width: 45rem){
+  .row {
+    display:flex;
+    margin-inline: auto;
+    align-items: left;
+    justify-content: left;
+    gap:2rem;
+   
+}
+
+.col{
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+
+}
+
+}
+
+  }
+
+
+.one{
+    padding: 10rem auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -700,29 +835,7 @@ section{
     
 }
 
-
-
-
-    /*.grid-container--home {
-        padding-bottom: max(1rem, 20vh);
-        align-items: end;
-    }
-
-    .grid-container--profile {
-        padding-bottom: max(10rem, 20vh);
-        align-items: center;
-    }
-    
-    /*.grid-container--home > *:first-child {
-        grid-column: 2;
-       
-    }
-
-    .grid-container--home > *:last-child {
-        grid-column: 3;
-    }*/
-    
-    .grid-container--destination {
+.grid-container--destination {
         justify-items: start;
         align-content: start;
         grid-template-areas: 

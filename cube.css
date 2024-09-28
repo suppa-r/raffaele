@@ -1,13 +1,13 @@
 
 :root {
-  --item-size: 28vmin;
+  --item-size: 35vmin;
   --depth: 1;
 }
 
 .bg-image {
   background: --clr-light;
   background-position: cover;
-  position: relative;
+  position: absolute;
   inset: -20vmin;
   animation: zoom-in-out 20s ease infinite;
 }
@@ -26,7 +26,7 @@
 }
 
 .face {
-  position: relative;
+  position: absolute;
   aspect-ratio: 1;
   border-radius: 1rem;
 
@@ -64,7 +64,7 @@
   }
 }
 .cube {
-  position: relative;
+  position: absolute;
   --width: var(--item-size);
   --width-n: calc(var(--item-size) * -1);
   --height: calc(var(--item-size) * var(--depth));
@@ -132,17 +132,17 @@ body.magic {
   display: flex;
   place-items: center;
   overflow: hidden;
-  height: 100vh;
+  height: 50vh;
   width: 100vw;
-  perspective: 37rem;
+  perspective: 10rem;
   background-color: black;
 }
 
 
 .cube {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: top;
+  align-items: top;
   height: 100vh; /* Adjust the height as needed */
 }
 
