@@ -82,7 +82,7 @@ body {
     color: hsl( var(--clr-white) );
     background-color: hsl( var(--clr-dark) );
     line-height: 1.1;
-    overflow-y: hidden;
+overflow-y: hidden;
   }
 
 /* make images easier to work with */
@@ -404,23 +404,21 @@ body{
     background-position: bottom center;
 }
 /* home */
-@media (min-width: 400px) {
+
 .home {
-    background-size: cover;
-    background-image: url(background-crew-mobile.jpg);
-}
+   
+    background-image: url(background-home-mobile.jpg);
 }
 @media (min-width: 960px) {
     .home {
-        background-size: cover;
-        background-image: url(background-crew-tablet.jpg);
+        background-position: center center;
+        background-image: url(background-home-tablet.jpg);
     }
 }
 
 @media (min-width: 45rem) {
     .home {
-        background-size: cover;
-        background-image: url(background-crew-desktop.jpg);
+       background-image: url(background-home-desktop.jpg);
     }
 } 
 
@@ -429,23 +427,22 @@ body{
 
 
 /* profile */
-@media (min-width: 400px) {
+
     .profile {
-        background-size: cover;
+       
         background-image: url(background-crew-mobile.jpg);
        }
-    }
-    
+  
     @media (min-width: 960px) {
         .profile {
-            background-size: cover;
+            background-position: center center;
             background-image: url(background-crew-tablet.jpg);
         }
     }
     
     @media (min-width: 45rem) {
         .profile {
-            background-size: cover;
+         
             background-image: url(background-crew-desktop.jpg);
         }
     } 
@@ -513,7 +510,6 @@ section{
 .container {
     width: 85%;
     max-width: 1128px;
-    margin-inline: auto;
     place-items: center;
     margin-inline: auto;
     overflow-y:hidden;
@@ -524,7 +520,7 @@ section{
 
 
 
-@media (min-width:600px) {
+@media (min-width:400px) {
     
         .row {
           display:flex;
@@ -544,8 +540,6 @@ section{
 
 
       .col + .col {
-          
-        margin-left: 5em;
         margin-inline: auto;
         place-items: center;
       }
@@ -559,23 +553,23 @@ section{
     .row {
       display:flex;
       margin-inline: auto;
-      place-items: center;
+      align-items: center;
+      justify-content: center;
     }
 
   .col{
       width:100%;
-      place-items: center;
       margin-inline: auto;
-     
-     
- }
+      align-items: center;
+      justify-content: center;
+
+}
 
 
   .col + .col {
-      margin-left: 5rem;
       margin-inline: auto;
-      place-items: center;
-    
+      align-items: center;
+      justify-content: center;
   }
     }
 
@@ -583,24 +577,23 @@ section{
   .row {
     display:flex;
     margin-inline: auto;
-    place-items: center;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
    
 }
 
 .col{
     width:100%;
     margin-inline: auto;
-    place-items: center;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
 
 }
 
 
 .col + .col {
     margin-left: 5rem;
-    margin-inline: auto;
-    place-items: center;
+  
   }
 }
 
