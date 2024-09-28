@@ -173,20 +173,11 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 .row {
     max-width: var(--container-max-width);
     margin: 0 auto;
-    justify-content: space-around;
+    align-items: left;
+   
 }
 
 @media(max-width: 1340px) {
@@ -320,10 +311,11 @@ section {
    
 }
 .col{
-   
+justify-self: start;
    margin-inline: 0;
    text-align: left;
-   max-width: max-content;
+   /*max-width: max-content;*/
+   width:100%;
    
 }
 
@@ -770,8 +762,12 @@ body:not(.user-is-tabbing) a:focus {
 
 .about__content {
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
+    justify-self: start;
+    flex-direction: row;
+    align-items: end;
+    gap:12rem;
+   
+   
 }
 
 @media(max-width: 900px) {
