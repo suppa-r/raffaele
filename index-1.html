@@ -7,14 +7,13 @@
   <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
 
   <!-- Put your site title here -->
-  <title> 
-   Raffaele Suppa | add Designer based in Toronto, Canada
+  <title>
+   Raffaele Suppa | A Web Developer based in Toronto, Canada.
   </title>
 
-  <meta name="description" content="Add small description of yourslef.">
+  <meta name="description" content="Architect, Web Designer.">
   <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="keywords" content="Put your name, skills and some coding keywords" />
- 
+  <link rel="icon" type="png" sizes="32x32" href="favicon-32x32.png">
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,165 +21,166 @@
       rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
   <!-- Our custom CSS -->
-  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="css.css">
-  <link rel="stylesheet" href="perspective.css">
-  <script src="perspective.js" defer></script>
+ 
+  
+
 </head>
 
-<body>
+<body">
+  <a class="skip-to-content" href="#main">Skip to content</a>
 
-  <!-- ***** Header ***** -->
+<!-- ***** Header ***** -->
 
-  <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item">
-            <a href="#about" class="nav__link">Profile</a>
-          </li>
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
-         
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <h1 class="heading-primary fs-700 clr-light" style="margin-left: 15em;">
+<header class="header" role="banner" id="top">
+  <div class="container row">
+  <div class="row">
+    <nav class="nav" role="navigation">
+      <ul class="nav__items">
+      <li class="nav__item"><a href="#info" class="nav__link">Home</a></li>
+       <li class="nav__item"><a href="#about" class="nav__link">Profile</a></li>
+        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+        <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
+        <li class="nav__item">
+          <a href="#about" class="nav__link">About</a>
+        </li>
+        <li class="nav__item">
+          <a href="#contact" class="nav__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="header__text-box row">
+    <div class="header__text">
+      <h1 class="heading-primary">
         <!-- Replace the following name with your name -->
         <span>Raffaele Suppa</span>
-        <p class=" fs-500 clr-light ff-serif">Architectural Designer - Web Developer based in Toronto, Canada.</p>
-    <div class="header__text-box row">
-        <div class="row">  
-      <div class="header__text">
-    
-        </h1>
-        <br><br><br>
-        <!-- Put a small paragraph about yourself -->
+      </h1>
+      <!-- Put a small paragraph about yourself -->
+      <p>A Designer and Web Developer based in Toronto, Canada.</p>
+      <a href="#contact" class="btn btn--pink">Get in touch</a>
+    </div>
+  </div></div>
+</header>
+
+ 
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="index.html" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="profile.html" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="photography.html" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="contact.html" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<main role="main">
+
+
+
+
+ <!-- ***** About ***** -->
+ <div class="container row">
+ <section class="info" id="info">
+
+  
+   
+    <div class="about__content">
+      <div class="about__text">
         <div class="row">
         <div class="col">
-            <h1 class="text-accent fs-500 ff-sans-cond uppercase letter-spacing-3 d-block">So, I'm going to tell you about</h1><br>
-            <span class="d-block fs-800 ff-serif text-white">Myself</span></h1><br>
-            <p class="text-accent fs-600 ff-serif letter-spacing-3 d-block">I Design Awesome!</p><br>
-            
-            <p class="text-accent d-block fs-600 ff-serif letter-spacing-3 d-block" >Let’s face it; if you want to get to know someone,<br>
-                 you might as well genuinely go to source<br> and not hover kind of on the edge.<br> Well sit back .. relax, 
-            because <br>I'm gonna give you a Glimpse! <br><br>If I had a secret, I'm going to tell it. <br> Thank You </p>
-          </div>
-        <div class="col">
-    
-            <a href="#work" class="large-button uppercase ff-serif text-dark bg-white" style="margin-top: 7rem;">Explore</a>
+          <h2>About Me</h2>
 
-      <div><br><br><br><br>
-       <a href="#contact" class="btn btn--pink">Get in touch</a>
-      </div> </div>      
-    
-    </section></header>
-   
-      <main role="main">
-
-    <!-- ***** About ***** -->
- 
-    <section class="about" id="about">
-      <div class="container row">
-        <div class="col">
-     <h2>ABOUT ME</h2>
-      <div class="col">
-        <div class="about__content">
-          <div class="about__text">
-           <p class="text-accent fs-500 ff-serif letter-spacing-1">
-              The Divine Spark of Genius, and the all around tremendous talent, began in the Embryonic Form<br> (God was showing off, Again)<br> 
-               But this is the moment that miracle took effect and became the physical substance of Answered Prayer<br> -- my mom's-- intercession<br> had to be!<br>
-              I started teaching myself Web Design at the beginning of 2024. A short time ago, relatively.<br><br>And<br>
-               Suddenly! After the First Default of my New Year's Resolution.</p></div>
-               <div class="col">
-                <p class="text-accent fs-500 ff-serif letter-spacing-1">
-                  I had changed all the light bulbs and was getting overdosed by<br> <strong>**MASH**</strong><br>
-                Web Design became a Million Dollar<br>
-                Solution to my mounting boredom and completely outmatched it.<br><strong>What a Relief Web Design Became</strong><br>
-                 That education became the start of this on your screen.</p><br>
-          
-            <p class="text-accent uppercase fs-700 ff-serif letter-spacing-1 w3-center">
-              <strong>I hope it's a success</strong></p></div>
-             <div class="col">
-<!--Replace the below paragraph with info about yourself--> 
-            <div class="about__photo-container">
-            <img class="about__photo" src="images\young-me.png" alt="raffaele" style="width: 100%">
-            </div></div></div></div></div></section>
-          
-           
-   
-             
-   <!-- <section class="about" id="about">
-      <div class="container row">
-   <div class="col">
-        <h2 class="aboutme">About Me</h2></div>
-      </div>
-      <div class="col">
-        <div class="about__content">
-          <div class="about__text">
-            Replace the below paragraph with info about yourself 
-            <div class="about__photo-container">
-              Add a nice photo of yourself 
-              <img class="about__photo" src="./images/syed-ali-hussnain.jpg" alt="raffaele">
-            </div>
-            <div class="col">
-            <p class="text-accent fs-400 ff-serif letter-spacing-1">
-              The Divine Spark of Genius, and the all around tremendous talent, began in the Embryonic Form (God was showing off, Again)<br> 
-               But this is the moment that miracle took effect and became the physical substance of Answered Prayer<br> -- my mom's--<br> intercession<br> had to be!<br><br>
-            
+        
+        <!-- Replace the below paragraph with info about yourself -->
+        </div></div></div>
+          <div class="col">
+            <p class="text-accent fs-600 ff-serif letter-spacing-3 d-block">So, I'm going to tell you about</h1><br><br>
+              <span class="d-block fs-800 ff-serif text-white">Myself</span><br><br>
+              <p class="text-accent fs-600 ff-serif letter-spacing-3 d-block">I Design Awesome!<br><br>
               
-               I started teaching myself Web Design at the beginning of 2024. A short time ago, relatively.<br><br>And<br>
-               Suddenly! After the First Default of my New Year's Resolution.</p>
-               <p class="text-accent fs-400 ff-serif letter-spacing-1">I had changed all the light bulbs and was getting overdosed by<br> <strong>**MASH**</strong><br>
-            
-             Web Design became a Million Dollar
-                Solution to my mounting boredom and completely outmatched it.<br><strong>What a Relief Web Design Became</strong><br>
-                 That education became the start of this on your screen.</p>
-            </div></div></section>
-          <div>
-             <p class="text-accent uppercase fs-700 ff-serif letter-spacing-1 w3-center">
-               <strong>I hope it's a success</strong></p>
-          </div>
-        
-    
-
-
-
-
-
-
-
-
-
-
-           
-          
-
+            Let’s face it; if you want to get to know someone,<br>
+                   you might as well genuinely go to source<br> and not hover kind of on the edge.<br> Well sit back .. relax, 
+              because <br>I'm gonna give you a Glimpse! <br><br>If I had a secret, I'm going to tell it. <br> Thank You </p>
+            </div>
+          <div class="col">
+      
+              <a href="#work" class="large-button uppercase ff-serif text-dark bg-white">Explore</a>
+  
+        <div>
        
- Replace the below paragraph with info about yourself 
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos id
-              nostrum illo harum blanditiis, tenetur eum suscipit cupiditate
-              in vel, ex quam quidem quos mollitia labore aut sunt eius
-              ratione molestiae fuga veniam facere similique voluptate.
-            </p>
-         Provide a link to your resume 
-            <a href="#" class="btn">My Resume</a>
-          </div>
-
+        </div></div></div></section>  
         
-        </div>
-      </div>
-    </section>-->
+        
 
 
 
 
 
-    <!-- ***** Work ***** -->
+
+
+
+
+
+      
+        <section class="about" id="about">
+          <div class="row">
+              <div class="col">
+        <p class="text-accent fs-500 ff-serif letter-spacing-1">
+         The Divine Spark of Genius, and the all around tremendous talent, began in the Embryonic Form (God was showing off, Again)<br> <br>
+          But this is the moment that miracle took effect and became the physical substance of Answered Prayer<br> -- my mom's--<br> intercession<br> had to be!<br><br>
+        I started teaching myself Web Design at the beginning of 2024. A short time ago, relatively.</p></div>
+        <div class="col">
+        <p class="text-accent fs-500 ff-serif letter-spacing-1">
+          Suddenly! After the First Default of my New Year's Resolution.<br><br>I had changed all the light bulbs and was getting overdosed by<br> <strong>**MASH**</strong></p>
+        </div></div>
+         
+          
+        <div class="col">
+          <p class="text-accent fs-500 ff-serif letter-spacing-1">
+              Web Design became a Million Dollar
+           Solution to my mounting boredom and completely outmatched it.<br><strong>What a Relief Web Design Became</strong><br>
+            That education became the start of this on your screen.</p>
+       
+    
+        <p class="text-accent uppercase fs-700 ff-serif letter-spacing-1 w3-center">
+          <strong>I hope it's a success</strong></p>
+        </div></div>
+        <div class="col">
+          
+         <!-- <div class="about__photo-container">
+           Add a nice photo of yourself -->
+           <img src="images\young-me.png" alt="raffaele">
+          </div></div></div></section>
+         
+    
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+     <!-- <div class="col">
+      <div class="about__photo-container">
+       Add a nice photo of yourself 
+        <img class="about__photo" src="./images/syed-ali-hussnain.jpg" alt="" />
+      </div>-->
+   
+<!-- ***** Work ***** -->
 
     <section class="work" id="work">
       <div class="row">
