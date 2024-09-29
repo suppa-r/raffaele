@@ -586,6 +586,19 @@ body:not(.user-is-tabbing) a:focus {
     font-size: var(--font-size-normal);
 }
 
+.header-1 {
+    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
+        url('./images/header.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: start;
+    background-attachment: fixed;
+    font-size: var(--font-size-normal);
+}
+
+
+
+
 .header__text {
     position: absolute;
     top: 50%;
@@ -788,4 +801,14 @@ body:not(.user-is-tabbing) a:focus {
     .footer {
         padding: var(--gutter-medium) 0;
     } 
+}
+.menu {
+    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
+    url('./images/header.jpg');
+height: 100vh;
+background-size: cover;
+background-position: start;
+background-attachment: fixed;
+font-size: var(--font-size-normal);
+  
 }
