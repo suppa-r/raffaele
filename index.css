@@ -21,7 +21,7 @@
    --gap-medium: 6rem;
    --gap-normal: 3rem;
    --gap-small-1: 2.5rem;
-   --gap-small: 2rem;
+   --gap-small: 1rem;
 
     /* colors */
     --clr-dark: 230 35% 7%;
@@ -278,16 +278,18 @@ img {
 
 h2 {
     font-size: var(--fs-400);
-    margin-bottom: var(--gutter-medium);
+    margin-bottom: var(--gap-small);
+    margin-left: 0rem;
 }
 
 h2::after {
     content: '';
     display: block;
     height: 2px;
-    width: 10rem;
+    width: 8.5rem;
     background: var(--pink);
-    margin: var(--gutter-small) 0;
+    /*margin: var(--gutter-small) 0;*/
+     margin: var(--gap-small) 0;
 }
 
 h3 {
@@ -666,6 +668,7 @@ background-attachment:fixed;
    margin-inline: 0;
    text-align: left;
    max-width: max-content;
+   justify-self: flex-start;
    
 }
 
@@ -772,11 +775,14 @@ background-attachment:fixed;
 /* --------------------------------------- */
 
 .about__content {
-    max-width: var(--container-medium-width);
-   
+    /*max-width: var(--container-medium-width);*/
+ 
     display: flex;
     flex-direction:row;
     align-items: flex-end;
+}
+.about__text{
+    margin-left: -9rem;
 }
 
 @media(max-width: 900px) {
