@@ -180,7 +180,7 @@ select {
 
 
 section {
-    padding: var(--gap-huge) 0;
+    /*padding: var(--gap-huge) 0;*/
     border-bottom: var(--border-light);
 }
 
@@ -598,11 +598,12 @@ background-attachment:fixed;
    
     display:flex;
     width: 90%;
-    max-width: 1500px;
+   /* max-width: 1500px;*/
    margin-inline: auto;
     justify-content: space-around;
     overflow-y:hidden;
     overflow-x: hidden;
+    align-items: start;
    
  
    
