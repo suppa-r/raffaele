@@ -288,14 +288,15 @@ h3 {
 
 h2 {
     font-size: var(--font-size-medium);
-    margin-bottom: var(--gutter-medium);
+    margin: var(--gutter-small-1);
+   
 }
 
 h2::after {
     content: '';
     display: block;
     height: 2px;
-    width: 10rem;
+    width: 6rem;
     background: var(--pink);
     margin: var(--gutter-small) 0;
 }
