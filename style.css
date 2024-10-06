@@ -151,7 +151,7 @@ footer{
 }
 
 .footer-left{
-    background: #2F5059;
+    background: #758c92;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,7 +162,7 @@ footer{
 .footer-left p{
     font-size: 30px;
     font-weight: 600;
-    color: #fff;
+    color: #000000;
 }
 
 .footer-left .bar{
