@@ -335,14 +335,15 @@ h3 {
 /* ------------------- */
 
 .large-button {
+    /*margin-right: 100%;*/
     font-size: 2rem;
     position: relative;
     z-index: 1;
-    display: inline-grid;
+    display: inline-flex;
     place-items: center;
     padding: 0 2em;
     border-radius: 50%;
-    aspect-ratio: 1;
+    aspect-ratio: 1 / .5;
     text-decoration: none;
 }
 
@@ -350,9 +351,9 @@ h3 {
     content: '';
     position: absolute;
     z-index: -1;
-    width: 100%;
-    height: 100%;
-    background: hsl( var(--clr-white) / .5);
+    width: 50%;
+    height: 50%;
+    background: hsl( var(--clr-white) / .8);
     border-radius: 50%;
     opacity: 0;
     transition: opacity 500ms linear, transform 750ms ease-in-out;
@@ -402,7 +403,7 @@ body:not(.user-is-tabbing) a:focus {
     padding: 1rem 4.2rem;
     text-decoration: none;
     color: inherit;
-    border: 1px solid  var(--pink);
+    border: 1px solid  white;
     font-weight: 400;
 }
 
@@ -426,11 +427,11 @@ body:not(.user-is-tabbing) a:focus {
 .btn:hover::after,
 .btn:focus::after {
     right: 0;
-    background: var(--pink);
+    background:#4FBEE0;
 }
 
 .btn--pink {
-    background: var(--pink);
+    background: #4FBEE0;
     transition: all 0.2s;
 }
 
@@ -449,7 +450,7 @@ body:not(.user-is-tabbing) a:focus {
     padding: .6rem;
     color: inherit;
     text-decoration: none;
-    border-bottom: 1px solid var(--pink);
+    border-bottom: 1px solid #4FBEE0;
 }
 
 .link__text::after {
@@ -472,7 +473,7 @@ body:not(.user-is-tabbing) a:focus {
 .link__text:hover::after,
 .link__text:focus:after {
     right: 0;
-    background: var(--pink);
+    background: #4FBEE0;
 }
 
 .link__text span {
@@ -725,6 +726,26 @@ body:not(.user-is-tabbing) a:focus {
     background-attachment: fixed;
     
 }
+/* --------------------------------------- */
+/* ----- About ----- */
+/* --------------------------------------- */
+.about {
+    display: flex;
+    padding:2rem;
+    flex-direction: row;
+    align-items:start;
+    justify-content: space-around;
+    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
+        url('./images/header.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+
+
 
 /* --------------------------------------- */
 /* ----- Work ----- */
