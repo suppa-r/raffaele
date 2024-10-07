@@ -552,16 +552,15 @@ body:not(.user-is-tabbing) a:focus {
 
 /* Main level */
 .menu {     
-  margin: 50px auto;
+  margin: 50px -7rem;
   width: 900px;
-  /* http://www.red-team-design.com/horizontal-centering-using-css-fit-content-value */
   width: -moz-fit-content;
   width: -webkit-fit-content;
   width: fit-content; 
 }
 
 .menu > li {
-  background: #333536;
+  background: #242627;
   float: left;
   position: relative;
   transform: skewX(25deg);
@@ -577,7 +576,7 @@ body:not(.user-is-tabbing) a:focus {
 }   
 
 .menu li:hover {
-  background: #2c2928;
+  background: #242627;;
 }   
 
 .menu > li > a {
@@ -595,7 +594,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .submenu li {
-  background-color: #34495e;
+  background-color:#242627;;
   position: relative;
   overflow: hidden;   
 }           
@@ -728,7 +727,7 @@ body:not(.user-is-tabbing) a:focus {
     align-items:start;
     justify-content: space-around;
     background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
-        url('./images/header.jpg');
+        url('header.jpg');
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -745,7 +744,7 @@ body:not(.user-is-tabbing) a:focus {
     align-items:start;
     justify-content: space-around;
     background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
-        url('./images/header.jpg');
+        url('header.jpg');
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -846,13 +845,6 @@ body:not(.user-is-tabbing) a:focus {
         padding: var(--gutter-normal);
     }
 
-<<<<<<< HEAD
-.genesis{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    
-}
-=======
     .client__logo:not(:last-of-type) {
         margin-right: var(--gutter-medium);
     }
@@ -898,4 +890,3 @@ body:not(.user-is-tabbing) a:focus {
     max-width: var(--container-medium-width);
 }
 
->>>>>>> acf62fff6a725a4d42cacbe33fac86ec792c9bbe
