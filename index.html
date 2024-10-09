@@ -16,15 +16,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
       rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>  
  
       <!-- Our custom CSS -->
   
-
+      <link rel="stylesheet" href="style-1.css">
+      ' <link rel="stylesheet" href="style.css">'
   <link rel="stylesheet" href="css.css">
 <link rel="stylesheet" href="index.css">
-<script src="nav.js"></script>
 </head>
+<script src="script.js"></script>
 <style>
   @keyframes moveGradient {
       from {
@@ -59,46 +62,104 @@
 <body>
   <main class="main">
   <!-- ***** Header ***** -->
-<section class="header" role="banner" id="top">
-  <!--<div class="logo">Awesome<span>&nbsp;&nbsp;Website</span></div>-->
 
-<aside>
-    <nav>
-      <ul>
-        <li>
-          <a href="#intro" class="active">
-            <i class="bx bx-home-circle">Box</i>
-            <span>Dashboard</span>
+<section class="header home-section" role="banner" id="top">
+  <!--<header class="header" role="banner" id="top">-->
+   <div class="sidebar">
+      <div class="logo_details">
+        <i class="bx bxl-audible icon"></i>
+        <div class="logo_name">Raffaele Suppa</div>
+        <i class="bx bx-home" id="btn"></i>
+      </div>
+      <ul class="nav-list">
+       <li>
+          <a href="#">
+            <i class="bx bx-party"></i>
+            <span class="link_name">Welcome</span>
           </a>
+          <span class="tooltip">Welcome</span>
         </li>
         <li>
           <a href="#">
-            <i class="bx bx-grid-alt">Box</i>
-            <span>Explore</span>
+            <i class="bx bxs-church"></i>
+            <span class="link_name">Intro</span>
           </a>
+          <span class="tooltip">Intro</span>
         </li>
         <li>
           <a href="#">
-            <i class="bx bx-carousel">Box</i>
-            <span>Slideshow</span>
+            <i class="bx bxs-photo-album"></i>
+            <span class="link_name">Profile</span>
           </a>
+          <ul class="submenu">
+            <a href="#">
+              <i class="bx bxs-photo-album"></i>
+              <span class="link_name">Beginnings</span>
+            </a>
+            <span class="tooltip">Beginnings</span>
+          </li>
+          <a href="#">
+            <i class="bx bxs-photo-album"></i>
+            <span class="link_name">Beginnings</span>
+          </a>
+          <span class="tooltip">Beginnings</span>
+        </li>
+        <a href="#">
+          <i class="bx bxs-photo-album"></i>
+          <span class="link_name">Beginnings</span>
+        </a>
+        <span class="tooltip">Beginnings</span>
+      </li>
+      <a href="#">
+        <i class="bx bxs-photo-album"></i>
+        <span class="link_name">Beginnings</span>
+      </a>
+      <span class="tooltip">Beginnings</span>
+    </li>
+          </ul> 
+          <li>
+          <a href="#">
+            <i class="bx bxs-buildings"></i>
+            <span class="link_name">Architecture</span>
+          </a>
+          <span class="tooltip">Architecture</span>
         </li>
         <li>
           <a href="#">
-            <i class="bx bx-user">Box</i>
-            <span>Profile</span>
+            <i class="bx bx-popsicle"></i>
+            <span class="link_name">Fun</span>
           </a>
+          <span class="tooltip">Fun</span>
         </li>
-      </ul>
-    </nav>
-</aside>
+        <li>
+          <a href="#">
+            <i class="bx bx-camera"></i>
+            <span class="link_name">Photography</span>
+          </a>
+          <span class="tooltip">Photography</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-graduation"></i>
+            <span class="link_name">Skills</span>
+          </a>
+          <span class="tooltip">Skills</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-phone"></i>
+            <span class="link_name">Contact</span>
+          </a>
+          <span class="tooltip">Contact</span>
+        </li>
+   </ul>
+    </div>
+  
+    <!-- Scripts 
+  
 
 
-   
-
- <!--<div class="sidebar">
- 
-        <ul class="menu cf">
+      <ul class="menu cf" style="margin-left: 35rem;">
         <li><a href="#intro">Intro</a></li>
         <li>
           <a href="#profile">Profile</a>
@@ -124,22 +185,27 @@
         <li><a href="">Contact Me</a></li>
     
       </ul>
-      </div>-->
-      <div class="content">
-    
+      </div>
+      <div class="header text">
+ <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">-->
 
-    
+         
+            <article class="content">
+            <p class="text-accent fs-600 uppercase letter-spacing-1 d-block">Welcome</div>
+       
+
+      
+          <p class="text-accent fs-500 uppercase letter-spacing-1 d-block">Raffaele Suppa</p>
       
      
-          <p class="text-accent fs-500 uppercase letter-spacing-1 d-block" style="margin-left: 8rem;">Raffaele Suppa</p><br><br>
-  
-     
-        <p class="text-accent fs-400 letter-spacing-1 d-block"  style="margin-left: 8rem;">An Architectural and Web Designer based<br>
-           in Toronto, Canada.</p><br><br><br>
-        <a href="#contact" class="btn btn--pink"  style="margin-left: 8rem;">Get in touch</a>
-      </div>
-<div class="pattern">
- 
+        <p class="text-accent fs-400 letter-spacing-1 d-block">An Architectural and Web Designer<br> 
+          based in Toronto, Canada.</p>
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
+            </article>
+
+ <div class="pattern">
 <div id="rc_pattern">
 <svg width="600" height="433" viewBox="0 0 511 433" fill="none" xmlns="http://www.w3.org/2000/svg">
   <mask id="mask">
@@ -773,9 +839,9 @@
   <g id="pulse" mask="url(#mask)">
     <rect width="100%" height="100%" fill="url(#gradient)"></rect>
   </g>
-</svg></div></div></div></section><br><br><br><br><br><br><br><br><br><br><br><br>
+</svg></div></div></section></section></main></body></html>
 
-<!-- ***** intro ***** -->
+<!-- ***** intro ***** 
 
 <section class="intro" id="intro">
 <div class="row">
@@ -826,7 +892,7 @@
   </section>
 
  
- <!-- ***** Profile ***** -->
+***** Profile ***** 
 <section class="about" id="about">
   <div class="row">
     <div class="col">
@@ -858,8 +924,8 @@
           </div>
           <div class="col">
     <h3>About Me</h3>
-    <!--<div class="about__content">
-      <div class="about__text">-->
+   <div class="about__content">
+      <div class="about__text">
           </div>
             
           <div class="col">
@@ -925,12 +991,12 @@
     
     </section>
 
-    <!-- ***** About ***** -->
+   ***** About ***** 
 
    
   </main>
 
-  <!-- ***** Contact ***** -->
+ ***** Contact ***** 
 
   <section class="contact" id="contact">
     <div class="row">
@@ -944,11 +1010,11 @@
           will do my best to respond back. 😊 The quickest way to reach out to
           me is via an email.
         </p>
-        <!-- Replace the email with yours -->
+       Replace the email with yours -->
         <a href="mailto:you@example.com" class="btn">you@example.com</a>
       </div>
     </div>
-  </section>
+  </section>-->
 
   
 
@@ -967,29 +1033,37 @@
           opacity: 0,
           duration: 0.5
       })*/
-      gsap.from(".header", {
-          y: 50,
+      gsap.from(".header .home-section", {
+          y: 100,
           stagger: 0.9,
+          delay: 0.9,
           duration: 2,
           opacity: 0
       })
-   gsap.from(".row", {
-          y: 100,
+      gsap.from(".sidebar", {
+          y: 50,
           delay: 0.9,
+          duration: 2,
+          opacity: 1
+      })
+
+
+   gsap.from(".content", {
+          y: 50,
+          delay: 0.9,
+          duration: 2,
           opacity: 0
       })
-    gsap.from(".col" , {
+
+     
+      gsap.from(".pattern", {
           y: 50,
-          opacity: 0,
-          duration: 0.9,
-          delay: 0.5
+          delay: 0.9,
+          duration: 2,
+          opacity: 0
       })
-      gsap.from("img", {
-          y: "100%",
-          delay: 2,
-          duration: 1
-      })
-  </script>
+
+</script>
 </body>
 
 </html>
