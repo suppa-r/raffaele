@@ -46,7 +46,29 @@ body{
   
 }
 
+.fun{
+  background-color:  #000000;
+  height: 85vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--line-clr);
+  border-radius: 1em;
+  margin-bottom: 0px;
+  padding: min(0em, 0%);
+  overflow-y: auto;
+  
+}
+.fun-text{
+  display: flex;
+  flex-direction: column;
+ 
 
+align-items:center;
+margin-right: 10rem;
+
+
+}
 
 .content{
 display: flex;
